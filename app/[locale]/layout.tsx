@@ -22,6 +22,8 @@ export async function generateMetadata({
     description: fr
       ? "Vente, modification et livraison de conteneurs maritimes de 10 à 40 pieds, neufs et usagés. Gatineau, Outaouais et partout au Québec."
       : "Sales, modification and delivery of 10 to 40 ft shipping containers, new and used. Gatineau, the Outaouais and anywhere in Quebec.",
+    /* Demo build: keep it out of search until the client signs off. */
+    robots: { index: false, follow: false },
   };
 }
 

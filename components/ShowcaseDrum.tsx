@@ -21,8 +21,8 @@ type Shot = { src: string; alt: string };
  * repeating the available images up to MIN_CARDS.
  */
 const MIN_CARDS = 16;
-const CARD_W = { base: 132, md: 200 };
-const CARD_H = { base: 130, md: 198 };
+const CARD_W = { base: 158, md: 200 };
+const CARD_H = { base: 156, md: 198 };
 
 export default function ShowcaseDrum({ label }: { label: string }) {
   const trackRef = useRef<HTMLDivElement>(null);
@@ -90,7 +90,7 @@ export default function ShowcaseDrum({ label }: { label: string }) {
     >
       <div
         ref={trackRef}
-        className="relative h-[130px] w-[132px] md:h-[198px] md:w-[200px]"
+        className="relative h-[156px] w-[158px] md:h-[198px] md:w-[200px]"
         style={{ transformStyle: "preserve-3d" }}
       >
         {cards.map((shot, i) => (
