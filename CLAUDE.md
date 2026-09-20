@@ -58,16 +58,27 @@ motion is honored via `gsap.matchMedia` — under it, everything renders at rest
 
 ## Design
 
-Three cool palettes as CSS variables in `app/globals.css`, switched by
-`data-palette` on `<html>`: `graphite` (default), `beton`, `mono`. All are
-deliberately clear of the FeeSlayers identity (navy / cream / gold / rust / sage)
-used in the `webdevfsusa` repo — these are different clients and must not look
-related.
+**Terre** — one palette, matte and low-chroma, defined in `app/globals.css`.
+Bone ground, paper cards, taupe secondary text, a slate blue for actions and a
+matte brown for labels, with a warm charcoal for dark sections. Every pairing
+is verified to WCAG AA; the values carry their ratios in comments.
+
+The brief was earthy and mellow with nothing that vibrates — this sells steel
+boxes, not software. **Do not introduce a saturated accent.** If something needs
+emphasis, use weight, size or the charcoal, not chroma.
+
+The palette is deliberately near-colourless because **photography carries the
+colour**. That is the real lesson from the Safeer template: its stylesheet uses
+white and black roughly 115 times and gold six times — the richness on screen
+comes from its images, not its swatches.
 
 Type: Sora (display), IBM Plex Sans (body), IBM Plex Mono (dimensions and specs).
+Display headings follow Safeer's measured treatment — large, **weight 300**,
+`-0.036em` tracking. Light type at size is the effect; do not bold it.
 
 The `ui-ux-pro-max` skill bundle is in `.claude/skills/`. Query it before making
-visual decisions:
+visual decisions, but note its palette data skews saturated and had no match for
+this brief:
 
 ```bash
 python3 .claude/skills/ui-ux-pro-max/scripts/search.py "<query>" --domain style --stack nextjs

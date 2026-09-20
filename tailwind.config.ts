@@ -18,6 +18,10 @@ const config: Config = {
         muted: "var(--muted)",
         accent: "var(--accent)",
         "on-accent": "var(--on-accent)",
+        "accent-2": "var(--accent-2)",
+        dark: "var(--dark)",
+        "on-dark": "var(--on-dark)",
+        "dark-muted": "var(--dark-muted)",
       },
       fontFamily: {
         display: ["var(--font-display)", "system-ui", "sans-serif"],

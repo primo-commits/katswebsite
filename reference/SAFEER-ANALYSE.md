@@ -77,7 +77,37 @@ inexpensive way to settle the question.
 
 Measured from `safeertemplate.webflow.shared.766df1dbf.min.css` (112 KB).
 
-## Palette — read this before choosing colors
+## Palette — CORRECTED
+
+An earlier revision of this file claimed Safeer's palette was "warm near-black
+with gold and orange accents" and warned it collided with the FeeSlayers
+identity. **That was wrong**, and the error is instructive: it read the
+variable *definitions* without checking how often each is actually referenced.
+
+Measured usage across the 112 KB stylesheet:
+
+| Token | Uses |
+|---|---|
+| `white` | 38 as a variable, 77 raw |
+| `black` | 10 as a variable, 61 raw |
+| `dark-900` | 9 |
+| `off-white` | 5 |
+| **`gold`** | **4** |
+| **`orange`** | **2** |
+| `warm-gray` | 1 |
+| `neutral`, `soft-white`, `snow`, `blush` | **0 — defined, never used** |
+
+**Safeer is a white-and-black site.** Gold and orange appear six times in
+total; they are trim on buttons, not a scheme. All the colour a visitor sees
+comes from the photography.
+
+That is the lesson worth copying, and it is why the Katiana palette is
+near-colourless: let the images carry the colour.
+
+Webflow exports every variable a designer ever defined, used or not. Never
+read a token list as a palette without counting references.
+
+## The defined tokens, for the record
 
 ```
 --deep-black  #08070c      --gold       #febd1a

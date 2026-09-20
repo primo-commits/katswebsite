@@ -36,7 +36,7 @@ export default async function LocaleLayout({
   if (!isLocale(locale)) notFound();
 
   return (
-    <html lang={locale === "fr" ? "fr-CA" : "en-CA"} data-palette="graphite">
+    <html lang={locale === "fr" ? "fr-CA" : "en-CA"}>
       <body>
         <a href="#main" className="sr-only focus:not-sr-only">
           {locale === "fr" ? "Aller au contenu principal" : "Skip to main content"}

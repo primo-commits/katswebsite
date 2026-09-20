@@ -9,15 +9,27 @@
   --font-body: "IBM Plex Sans";
   --font-mono: "IBM Plex Mono";
 
-  /* Graphite — default */
-  --ground: #0e1012;
-  --panel: #16191c;
-  --panel-2: #1d2126;
-  --line: #282e34;
-  --text: #eceff1;
-  --muted: #98a2aa;
-  --accent: #22d3ee;
-  --on-accent: #06212a;
+  /*
+   * Terre — matte, low-chroma, earth-based. Nothing saturated enough to
+   * vibrate: this is a yard selling steel boxes, not a tech product.
+   * The palette is deliberately near-colourless so photography carries the
+   * colour, which is the structural lesson from the Safeer template (its own
+   * stylesheet uses white and black ~115 times and gold six times).
+   *
+   * Contrast verified against WCAG AA at every pairing below.
+   */
+  --ground: #e9e5de;      /* bone */
+  --panel: #f5f3ef;       /* paper — cards */
+  --panel-2: #ddd8cf;     /* recessed */
+  --line: #d2ccc1;
+  --text: #1f1c18;        /* warm near-black — 12.8:1 on bone */
+  --muted: #625b50;       /* taupe — 4.7:1 on bone */
+  --accent: #465c6e;      /* slate blue — 5.2:1 on bone, 6.4:1 with white */
+  --on-accent: #ffffff;
+  --accent-2: #6a5b49;    /* matte brown — 5.1:1 on bone */
+  --dark: #2b2721;        /* warm charcoal — dark sections */
+  --on-dark: #ede9e2;     /* 11.2:1 on charcoal */
+  --dark-muted: #a79e90;  /* 5.4:1 on charcoal */
 
   /*
    * Type scale, radii and rhythm measured from the Safeer template's own
@@ -53,28 +65,6 @@
 
   --section-y: clamp(4.5rem, 7vw, 8rem);
   --card-padding: clamp(0.75rem, 1.6vw, 1.5rem);
-}
-
-[data-palette="beton"] {
-  --ground: #e7e9ea;
-  --panel: #ffffff;
-  --panel-2: #dde1e3;
-  --line: #c9cfd2;
-  --text: #14181a;
-  --muted: #565e63;
-  --accent: #0f5e5a;
-  --on-accent: #ffffff;
-}
-
-[data-palette="mono"] {
-  --ground: #fbfbfc;
-  --panel: #ffffff;
-  --panel-2: #f1f3f5;
-  --line: #e1e5e9;
-  --text: #0f1317;
-  --muted: #585f66;
-  --accent: #1f5eff;
-  --on-accent: #ffffff;
 }
 
 html { scroll-behavior: smooth; }
