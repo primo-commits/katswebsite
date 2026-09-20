@@ -39,29 +39,26 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             playsInline
             aria-hidden
           />
-          <div aria-hidden className="absolute inset-0 bg-dark/55" />
-          <div aria-hidden className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black/70 to-transparent" />
+          <div aria-hidden className="absolute inset-0 bg-dark/70" />
+          <div aria-hidden className="absolute inset-x-0 bottom-0 h-full bg-gradient-to-t from-black/80 via-black/40 to-black/25" />
 
           <div className="relative">
-            {/* Centred nav, business name in the notch */}
-            <header className="flex items-start justify-center gap-8 px-5 pt-5 sm:px-8">
-              <nav className="hidden flex-1 items-center justify-end gap-7 pt-1 md:flex">
-                <a href="#inventaire" className="text-t-s font-medium text-on-dark/80 hover:text-on-dark">{t.nav.inventory}</a>
-                <a href="#applications" className="text-t-s font-medium text-on-dark/80 hover:text-on-dark">{t.nav.mods}</a>
+            {/* Light bar so the links can be black, large and pushed to the edges */}
+            <header className="flex items-center gap-4 bg-ground px-5 py-5 sm:px-10">
+              <nav className="hidden flex-1 items-center justify-start gap-8 md:flex lg:gap-14">
+                <a href="#inventaire" className="text-[17px] font-medium text-ink hover:text-accent">{t.nav.inventory}</a>
+                <a href="#applications" className="text-[17px] font-medium text-ink hover:text-accent">{t.nav.mods}</a>
               </nav>
-              <Link
-                href={`/${locale}`}
-                className="-mt-5 shrink-0 rounded-b-xl bg-ground px-7 py-4 font-display text-[15px] font-semibold tracking-tight text-ink"
-              >
+              <Link href={`/${locale}`} className="shrink-0 font-display text-[19px] font-semibold tracking-tight text-ink sm:text-[22px]">
                 Conteneurs Katiana
               </Link>
-              <nav className="hidden flex-1 items-center justify-start gap-7 pt-1 md:flex">
-                <a href="#livraison" className="text-t-s font-medium text-on-dark/80 hover:text-on-dark">{t.nav.delivery}</a>
-                <a href="#faq" className="text-t-s font-medium text-on-dark/80 hover:text-on-dark">{t.nav.faq}</a>
+              <nav className="flex flex-1 items-center justify-end gap-8 lg:gap-14">
+                <a href="#livraison" className="hidden text-[17px] font-medium text-ink hover:text-accent md:inline">{t.nav.delivery}</a>
+                <a href="#faq" className="hidden text-[17px] font-medium text-ink hover:text-accent md:inline">{t.nav.faq}</a>
+                <Link href={`/${other}`} className="font-mono text-[13px] uppercase tracking-widest text-muted hover:text-ink">
+                  {other}
+                </Link>
               </nav>
-              <Link href={`/${other}`} className="absolute right-5 top-6 font-mono text-xs uppercase tracking-widest text-on-dark/70 hover:text-on-dark sm:right-8">
-                {other}
-              </Link>
             </header>
 
             <div className="flex flex-col items-center gap-6 px-5 pb-2 pt-12 text-center sm:px-8 md:pt-16">

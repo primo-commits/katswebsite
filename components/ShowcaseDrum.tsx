@@ -49,6 +49,15 @@ export default function ShowcaseDrum({ label }: { label: string }) {
       items.forEach((el, i) => {
         el.style.transform = `rotateY(${i * step}deg) translateZ(${radius}px)`;
       });
+      /*
+       * Push the whole drum back by its own radius. Without this the front
+       * cards sit at +radius, which under a 1400px perspective puts them
+       * ~320px from the camera and magnifies them more than four times — a
+       * 200px card rendered ~880px wide. Offsetting by -radius lands the
+       * front face at z=0, so it draws at its true size and the rest of the
+       * cylinder falls away behind it.
+       */
+      gsap.set(track, { z: -radius });
     };
 
     place();
@@ -74,8 +83,8 @@ export default function ShowcaseDrum({ label }: { label: string }) {
 
   return (
     <div
-      className="relative flex h-[240px] w-full items-center justify-center md:h-[381px]"
-      style={{ perspective: "1400px" }}
+      className="relative flex h-[240px] w-full items-center justify-center overflow-hidden md:h-[381px]"
+      style={{ perspective: "1800px" }}
       aria-label={label}
       role="img"
     >
