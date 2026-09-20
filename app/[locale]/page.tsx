@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { isLocale } from "@/lib/i18n";
 import { getContent } from "@/lib/content";
+import ShowcaseDrum from "@/components/ShowcaseDrum";
 
 const SHELL = "mx-auto w-full max-w-shell px-5 sm:px-8";
 
@@ -13,62 +14,69 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
   return (
     <>
-      <header className="border-b border-line">
-        <div className={`${SHELL} flex min-h-[74px] flex-wrap items-center gap-4`}>
-          <Link href={`/${locale}`} className="mr-auto flex items-center gap-2.5">
-            <span className="grid h-8 w-8 place-items-center rounded-md bg-accent font-display text-[15px] font-bold text-on-accent">
-              K
-            </span>
-            <b className="font-display text-[17px] font-bold tracking-tight">Conteneurs Katiana</b>
-          </Link>
-          <nav className="hidden items-center gap-6 md:flex">
-            <a href="#inventaire" className="text-[14.5px] font-medium text-muted hover:text-ink">{t.nav.inventory}</a>
-            <a href="#modifications" className="text-[14.5px] font-medium text-muted hover:text-ink">{t.nav.mods}</a>
-            <a href="#livraison" className="text-[14.5px] font-medium text-muted hover:text-ink">{t.nav.delivery}</a>
-            <a href="#faq" className="text-[14.5px] font-medium text-muted hover:text-ink">{t.nav.faq}</a>
-          </nav>
-          <Link href={`/${other}`} className="font-mono text-xs uppercase tracking-widest text-muted hover:text-ink">
-            {other}
-          </Link>
-          <a href="tel:8736825954" className="inline-flex min-h-[46px] items-center rounded-lg bg-accent px-5 font-mono text-[15px] font-semibold text-on-accent">
-            {t.contact.phone}
-          </a>
-        </div>
-      </header>
-
       <main id="main">
-        {/* Hero */}
-        <section className={`${SHELL} grid items-center gap-11 py-14 lg:grid-cols-2 lg:py-20`}>
-          <div className="flex flex-col items-start gap-6">
-            <span data-animate="load-slide-up" className="inline-flex items-center rounded-md bg-accent/10 px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.13em] text-accent">
-              {t.hero.eyebrow}
-            </span>
-            <h1 data-split className="font-display text-d-8xl font-light">
-              {t.hero.title}
-            </h1>
-            <p data-animate="load-slide-up" className="max-w-[46ch] text-t-l text-muted">
-              {t.hero.lede}
-            </p>
-            <div data-animate="load-slide-up" className="flex flex-wrap gap-3">
-              <a href="#inventaire" className="inline-flex min-h-[52px] items-center rounded-lg bg-accent px-6 font-semibold text-on-accent">
-                {t.hero.ctaPrimary}
-              </a>
-              <a href="tel:8736825954" className="inline-flex min-h-[52px] items-center rounded-lg border border-line px-6 font-semibold text-ink">
-                {t.hero.ctaSecondary}
-              </a>
-            </div>
-          </div>
-          <div data-animate="slide-scale" className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-line bg-panel">
-            <div className="absolute inset-0 grid place-items-center p-6">
-              <div className="relative h-1/2 w-[78%] overflow-hidden rounded border border-line bg-panel-2">
-                <div className="absolute inset-0 opacity-70 [background:repeating-linear-gradient(90deg,transparent_0_9px,var(--line)_9px_10px)]" />
+      <div className="px-3 pt-3 sm:px-5 sm:pt-5">
+        <section className="relative overflow-hidden rounded-xl bg-dark text-on-dark">
+          {/* Placeholder ground until a real yard photo exists. */}
+          <div aria-hidden className="absolute inset-0 bg-dark" />
+          <div
+            aria-hidden
+            className="absolute inset-0 opacity-[0.07]"
+            style={{ background: "repeating-linear-gradient(90deg, #fff 0 2px, transparent 2px 14px)" }}
+          />
+          <div aria-hidden className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black/55 to-transparent" />
+
+          <div className="relative">
+            <header className="flex flex-wrap items-center gap-4 px-5 py-5 sm:px-8">
+              <Link href={`/${locale}`} className="font-display text-[17px] font-semibold tracking-tight text-on-dark md:hidden">
+                Conteneurs Katiana
+              </Link>
+              <nav className="hidden flex-1 items-center justify-start gap-7 md:flex">
+                <a href="#inventaire" className="text-t-s font-medium text-on-dark/75 hover:text-on-dark">{t.nav.inventory}</a>
+                <a href="#modifications" className="text-t-s font-medium text-on-dark/75 hover:text-on-dark">{t.nav.mods}</a>
+              </nav>
+              <Link
+                href={`/${locale}`}
+                className="hidden shrink-0 rounded-b-xl bg-ground px-6 py-3 font-display text-[15px] font-semibold tracking-tight text-ink md:-mt-5 md:block"
+              >
+                Conteneurs Katiana
+              </Link>
+              <nav className="hidden flex-1 items-center justify-end gap-7 md:flex">
+                <a href="#livraison" className="text-t-s font-medium text-on-dark/75 hover:text-on-dark">{t.nav.delivery}</a>
+                <a href="#faq" className="text-t-s font-medium text-on-dark/75 hover:text-on-dark">{t.nav.faq}</a>
+              </nav>
+              <Link href={`/${other}`} className="ml-auto font-mono text-xs uppercase tracking-widest text-on-dark/70 hover:text-on-dark md:ml-0">
+                {other}
+              </Link>
+            </header>
+
+            <div className="flex flex-col items-center gap-6 px-5 pb-2 pt-10 text-center sm:px-8 md:pt-16">
+              <h1 data-split className="max-w-[16ch] font-display text-d-8xl font-light text-on-dark">
+                {t.hero.title}
+              </h1>
+              <p data-animate="load-slide-up" className="max-w-[46ch] text-t-l text-on-dark/80">
+                {t.hero.lede}
+              </p>
+              <div data-animate="load-slide-up" className="flex items-center gap-2">
+                <a href="#inventaire" className="inline-flex min-h-[52px] items-center rounded-full bg-ground px-7 font-semibold text-ink">
+                  {t.hero.ctaPrimary}
+                </a>
+                <a
+                  href="tel:8736825954"
+                  aria-label={t.hero.ctaSecondary}
+                  className="inline-flex h-[52px] w-[52px] items-center justify-center rounded-full bg-ground text-ink"
+                >
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden>
+                    <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </a>
               </div>
             </div>
-            <span className="absolute bottom-3 left-3 rounded-md border border-line bg-ground px-2.5 py-1.5 font-mono text-[11px] text-muted">
-              {locale === "fr" ? "Photo — conteneur 20 pi" : "Photo — 20 ft container"}
-            </span>
+
+            <ShowcaseDrum label={locale === "fr" ? "Réalisations en conteneurs" : "Completed container projects"} />
           </div>
         </section>
+      </div>
 
         {/* Spec strip */}
         <div data-animate="stagger-container" className="grid grid-cols-2 gap-px border-y border-line bg-line md:grid-cols-4">

@@ -12,3 +12,7 @@ next-env.d.ts
 
 # Local pre-edit snapshots (working safety net, not project history)
 .snapshots/
+
+# Stock photo API keys — never commit
+.env
+.env.local
