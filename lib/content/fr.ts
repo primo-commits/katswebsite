@@ -5,7 +5,7 @@ export const fr: Content = {
   hero: {
     eyebrow: "En stock — 6 formats",
     title: "Conteneurs maritimes, configurés et livrés.",
-    lede: "De 10 à 40 pieds, neufs ou usagés. Modifiés dans notre cour, livrés sur votre terrain en Outaouais, à Ottawa et partout au Québec.",
+    lede: "De 10 à 40 pieds, neufs ou usagés. Tels quels ou modifiés dans notre cour, puis livrés sur votre terrain partout au Québec.",
     ctaPrimary: "Voir l'inventaire",
     ctaSecondary: "Appeler maintenant",
   },
@@ -39,6 +39,7 @@ export const fr: Content = {
   mods: {
     eyebrow: "Modifications",
     title: "Tout se fait dans notre cour",
+    note: "Les modifications sont optionnelles. Beaucoup de clients achètent le conteneur tel quel, sans aucune modification.",
     items: [
       { id: "rollup", title: "Porte roll-up", blurb: "Ouverture large, idéale pour un atelier ou un garage." },
       { id: "pietonne", title: "Porte piétonne", blurb: "Entrée de service isolée, avec serrure." },
@@ -60,8 +61,8 @@ export const fr: Content = {
   delivery: {
     eyebrow: "Livraison",
     title: "Où nous livrons",
-    zones: "Gatineau, Hull, Aylmer, Buckingham, Masson-Angers, Val-des-Monts, Chelsea, Cantley.",
-    elsewhere: "Livraison possible partout au Québec ; le coût varie selon la distance.",
+    zones: "Partout au Québec. Notre cour est à Gatineau, en Outaouais, et nous livrons dans toute la province.",
+    elsewhere: "Le transport varie selon la distance depuis Gatineau. Donnez-nous votre code postal et nous confirmons un montant fixe.",
     requirements: "Terrain de niveau, accès pour un camion de 60 pi et environ 100 pi de dégagement pour décharger.",
   },
   testimonial: {
@@ -79,6 +80,7 @@ export const fr: Content = {
       { q: "Quelle est la différence entre un conteneur neuf et un usagé?", a: "Un conteneur « neuf » (one-trip) n'a fait qu'une seule traversée depuis l'usine : peinture intacte, plancher propre, aucune bosse. Un usagé a navigué plusieurs années. Nous ne vendons que des usagés étanches au vent et à l'eau, inspectés un par un." },
       { q: "De quoi ai-je besoin sur mon terrain pour recevoir la livraison?", a: "Un terrain de niveau, assez ferme pour supporter le camion, un accès dégagé et environ 100 pi en ligne droite. Nous recommandons quatre blocs de béton aux coins pour garder le conteneur hors du sol." },
       { q: "Ai-je besoin d'un permis municipal?", a: "Cela dépend de votre municipalité et de l'usage prévu. Pour de l'entreposage temporaire, souvent non ; pour une installation permanente ou habitable, presque toujours oui. Vérifiez auprès de votre service d'urbanisme avant de commander." },
+      { q: "Dois-je faire modifier mon conteneur?", a: "Non. Beaucoup de clients achètent un conteneur tel quel, pour de l'entreposage par exemple. Les modifications sont offertes, jamais obligatoires." },
       { q: "Combien coûte la livraison?", a: "Le coût dépend de la distance depuis notre cour et de l'accès à votre terrain. Donnez-nous votre code postal et nous confirmons un montant fixe, sans surprise à l'arrivée." },
       { q: "Est-ce qu'un conteneur peut servir à l'année?", a: "Oui, avec de l'isolation. Sans isolation, la condensation s'installe dès les premiers écarts de température. Nous isolons à l'uréthane giclé, ce qui règle à la fois l'isolation et l'étanchéité à l'air." },
     ],

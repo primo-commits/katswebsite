@@ -5,7 +5,7 @@ export const en: Content = {
   hero: {
     eyebrow: "In stock — 6 sizes",
     title: "Shipping containers, configured and delivered.",
-    lede: "From 10 to 40 feet, new or used. Modified in our yard and delivered straight to your site across the Outaouais, Ottawa and anywhere in Quebec.",
+    lede: "From 10 to 40 feet, new or used. As they come or modified in our yard, then delivered to your site anywhere in Quebec.",
     ctaPrimary: "See inventory",
     ctaSecondary: "Call now",
   },
@@ -39,6 +39,7 @@ export const en: Content = {
   mods: {
     eyebrow: "Modifications",
     title: "All done in our yard",
+    note: "Modifications are optional. Plenty of customers buy the container exactly as it is.",
     items: [
       { id: "rollup", title: "Roll-up door", blurb: "Wide opening, ideal for a workshop or garage." },
       { id: "pietonne", title: "Personnel door", blurb: "Insulated service entrance with a lock." },
@@ -60,8 +61,8 @@ export const en: Content = {
   delivery: {
     eyebrow: "Delivery",
     title: "Where we deliver",
-    zones: "Gatineau, Hull, Aylmer, Buckingham, Masson-Angers, Val-des-Monts, Chelsea, Cantley.",
-    elsewhere: "Delivery available anywhere in Quebec; cost varies with distance.",
+    zones: "Anywhere in Quebec. Our yard is in Gatineau, in the Outaouais, and we deliver across the province.",
+    elsewhere: "Haulage varies with distance from Gatineau. Give us your postal code and we will confirm a fixed amount.",
     requirements: "Level ground, access for a 60 ft truck, and roughly 100 ft of clearance to unload.",
   },
   testimonial: {
@@ -79,6 +80,7 @@ export const en: Content = {
       { q: "What's the difference between a new and a used container?", a: "A \"new\" (one-trip) container has made a single crossing from the factory: intact paint, clean floor, no dents. A used one has sailed for years. We only sell used containers that are wind- and watertight, inspected one by one." },
       { q: "What do I need on my property to take delivery?", a: "Level ground firm enough to carry the truck, clear access, and about 100 ft in a straight line. We recommend four concrete blocks at the corners to keep the container off the ground." },
       { q: "Do I need a municipal permit?", a: "It depends on your municipality and the intended use. For temporary storage, often not; for a permanent or habitable installation, almost always. Check with your planning department before ordering." },
+      { q: "Do I have to have my container modified?", a: "No. Plenty of customers buy a container exactly as it is, for storage for example. Modifications are offered, never required." },
       { q: "How much does delivery cost?", a: "It depends on the distance from our yard and access to your site. Give us your postal code and we'll confirm a fixed amount, with no surprise on arrival." },
       { q: "Can a container be used year-round?", a: "Yes, with insulation. Without it, condensation sets in as soon as temperatures swing. We use spray-foam urethane, which handles insulation and air sealing at once." },
     ],

@@ -18,7 +18,7 @@ export type Content = {
   about: { eyebrow: string; title: string; body: string; statValue: string; statLabel: string };
   inventory: { eyebrow: string; title: string; updated: string; priceTba: string; perDelivery: string; cta: string };
   useCases: { eyebrow: string; title: string; items: UseCase[] };
-  mods: { eyebrow: string; title: string; items: Modification[] };
+  mods: { eyebrow: string; title: string; note: string; items: Modification[] };
   steps: { eyebrow: string; title: string; items: Step[] };
   delivery: { eyebrow: string; title: string; zones: string; elsewhere: string; requirements: string };
   testimonial: { eyebrow: string; title: string; quote: string; author: string; role: string; rating: string };

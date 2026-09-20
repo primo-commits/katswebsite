@@ -175,6 +175,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           <h2 data-animate="inview-slide-up" className="mb-7 mt-4 font-display text-d-4xl font-light">
             {t.mods.title}
           </h2>
+          <p data-animate="inview-slide-up" className="mb-7 -mt-4 max-w-[54ch] text-t-m text-muted">
+            {t.mods.note}
+          </p>
           <div data-animate="stagger-container" className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {t.mods.items.map((m) => (
               <div key={m.id} data-animate="stagger-item" className="flex flex-col gap-2 rounded-l border border-line bg-panel p-card">

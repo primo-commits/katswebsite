@@ -10,7 +10,11 @@ gets found.
 ## The business
 
 Conteneurs Katiana sells, modifies and delivers shipping containers — 10 to 40 ft,
-new (one-trip) and used — across the Outaouais, Ottawa and Quebec. Yard mods:
+new (one-trip) and used — **anywhere in Quebec**, from a yard in Gatineau. The
+Outaouais is the home base, not the service limit.
+
+**Modification is optional.** Plenty of customers buy a container unmodified, and
+the site must never imply that a mod is required to buy. Yard mods:
 roll-up door, personnel door, windows, electrical, spray-foam insulation, paint.
 Phone 873-682-5954. Mon–Fri 8–17, Sat 9–13. Payment on delivery.
 
