@@ -43,10 +43,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <span data-animate="load-slide-up" className="inline-flex items-center rounded-md bg-accent/10 px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.13em] text-accent">
               {t.hero.eyebrow}
             </span>
-            <h1 data-split className="font-display text-[clamp(34px,5vw,58px)] font-bold leading-[1.02] tracking-[-0.035em]">
+            <h1 data-split className="font-display text-d-8xl font-light">
               {t.hero.title}
             </h1>
-            <p data-animate="load-slide-up" className="max-w-[46ch] text-lg leading-relaxed text-muted">
+            <p data-animate="load-slide-up" className="max-w-[46ch] text-t-l text-muted">
               {t.hero.lede}
             </p>
             <div data-animate="load-slide-up" className="flex flex-wrap gap-3">
@@ -84,14 +84,14 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
 
         {/* About */}
-        <section className={`${SHELL} py-16`}>
+        <section className={`${SHELL} py-section`}>
           <Eyebrow>{t.about.eyebrow}</Eyebrow>
           <div className="mt-5 grid gap-8 lg:grid-cols-[1.4fr_1fr] lg:items-end">
-            <h2 data-split className="font-display text-[clamp(24px,3.4vw,38px)] font-bold leading-tight tracking-[-0.03em]">
+            <h2 data-split className="font-display text-d-4xl font-light">
               {t.about.title}
             </h2>
             <div data-animate="inview-slide-up" className="flex flex-col gap-3">
-              <p className="text-[15.5px] leading-relaxed text-muted">{t.about.body}</p>
+              <p className="text-t-m text-muted">{t.about.body}</p>
               <div className="flex items-baseline gap-2.5">
                 <b className="font-display text-3xl font-bold text-accent">{t.about.statValue}</b>
                 <span className="text-sm text-muted">{t.about.statLabel}</span>
@@ -101,10 +101,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </section>
 
         {/* Inventory */}
-        <section id="inventaire" className={`${SHELL} py-16`}>
+        <section id="inventaire" className={`${SHELL} py-section`}>
           <Eyebrow>{t.inventory.eyebrow}</Eyebrow>
           <div className="mb-7 mt-4 flex flex-wrap items-baseline gap-4">
-            <h2 data-animate="inview-slide-up" className="font-display text-[clamp(24px,3.2vw,34px)] font-bold tracking-[-0.03em]">
+            <h2 data-animate="inview-slide-up" className="font-display text-d-4xl font-light">
               {t.inventory.title}
             </h2>
             <span className="font-mono text-xs text-muted">{t.inventory.updated}</span>
@@ -115,7 +115,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                 key={c.id}
                 data-animate="stagger-item"
                 data-hover-trigger
-                className="flex flex-col gap-3 overflow-hidden rounded-xl border border-line bg-panel p-5"
+                className="flex flex-col gap-3 overflow-hidden rounded-l border border-line bg-panel p-card"
               >
                 <div data-hover-target className="grid h-32 place-items-center rounded-lg border border-line bg-panel-2">
                   <span className="font-mono text-[11px] text-muted">Photo — {c.size}</span>
@@ -127,7 +127,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                   <h3 className="font-display text-lg font-semibold tracking-tight">{c.size}</h3>
                 </div>
                 <div className="rounded-lg bg-panel-2 px-3 py-2 font-mono text-[13px]">{c.dimensions}</div>
-                <p className="flex-grow text-[14.5px] leading-relaxed text-muted">{c.blurb}</p>
+                <p className="flex-grow text-t-s text-muted">{c.blurb}</p>
                 <div className="flex items-baseline gap-1.5">
                   <b className="font-display text-xl font-bold text-accent">{t.inventory.priceTba}</b>
                   <span className="text-[13px] text-muted">{t.inventory.perDelivery}</span>
@@ -141,9 +141,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </section>
 
         {/* Use cases */}
-        <section className={`${SHELL} py-16`}>
+        <section className={`${SHELL} py-section`}>
           <Eyebrow>{t.useCases.eyebrow}</Eyebrow>
-          <h2 data-split className="mb-7 mt-4 font-display text-[clamp(24px,3.2vw,34px)] font-bold tracking-[-0.03em]">
+          <h2 data-split className="mb-7 mt-4 font-display text-d-4xl font-light">
             {t.useCases.title}
           </h2>
           <div data-animate="stagger-container" className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -154,7 +154,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                 </div>
                 <div className="flex flex-col gap-1.5 p-5">
                   <h3 className="font-display text-[17px] font-semibold">{u.title}</h3>
-                  <p className="text-sm leading-relaxed text-muted">{u.blurb}</p>
+                  <p className="text-t-s text-muted">{u.blurb}</p>
                 </div>
               </div>
             ))}
@@ -162,47 +162,47 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </section>
 
         {/* Modifications */}
-        <section id="modifications" className={`${SHELL} py-16`}>
+        <section id="modifications" className={`${SHELL} py-section`}>
           <Eyebrow>{t.mods.eyebrow}</Eyebrow>
-          <h2 data-animate="inview-slide-up" className="mb-7 mt-4 font-display text-[clamp(24px,3.2vw,34px)] font-bold tracking-[-0.03em]">
+          <h2 data-animate="inview-slide-up" className="mb-7 mt-4 font-display text-d-4xl font-light">
             {t.mods.title}
           </h2>
           <div data-animate="stagger-container" className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {t.mods.items.map((m) => (
-              <div key={m.id} data-animate="stagger-item" className="flex flex-col gap-2 rounded-xl border border-line bg-panel p-5">
+              <div key={m.id} data-animate="stagger-item" className="flex flex-col gap-2 rounded-l border border-line bg-panel p-card">
                 <h3 className="font-display text-[17px] font-semibold">{m.title}</h3>
-                <p className="text-sm leading-relaxed text-muted">{m.blurb}</p>
+                <p className="text-t-s text-muted">{m.blurb}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* Steps */}
-        <section className={`${SHELL} py-16`}>
+        <section className={`${SHELL} py-section`}>
           <Eyebrow>{t.steps.eyebrow}</Eyebrow>
-          <h2 data-animate="inview-slide-up" className="mb-7 mt-4 font-display text-[clamp(24px,3.2vw,34px)] font-bold tracking-[-0.03em]">
+          <h2 data-animate="inview-slide-up" className="mb-7 mt-4 font-display text-d-4xl font-light">
             {t.steps.title}
           </h2>
           <div data-animate="stagger-container" className="grid gap-4 md:grid-cols-3">
             {t.steps.items.map((s) => (
-              <div key={s.n} data-animate="stagger-item" className="flex flex-col gap-2.5 rounded-xl border border-line bg-panel p-6">
+              <div key={s.n} data-animate="stagger-item" className="flex flex-col gap-2.5 rounded-l border border-line bg-panel p-card">
                 <span className="font-mono text-xs tracking-[0.1em] text-accent">{s.n}</span>
                 <h3 className="font-display text-lg font-semibold">{s.title}</h3>
-                <p className="text-sm leading-relaxed text-muted">{s.blurb}</p>
+                <p className="text-t-s text-muted">{s.blurb}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* Delivery */}
-        <section id="livraison" className={`${SHELL} py-16`}>
+        <section id="livraison" className={`${SHELL} py-section`}>
           <Eyebrow>{t.delivery.eyebrow}</Eyebrow>
-          <h2 data-animate="inview-slide-up" className="mb-7 mt-4 font-display text-[clamp(24px,3.2vw,34px)] font-bold tracking-[-0.03em]">
+          <h2 data-animate="inview-slide-up" className="mb-7 mt-4 font-display text-d-4xl font-light">
             {t.delivery.title}
           </h2>
           <div data-animate="stagger-container" className="grid gap-4 md:grid-cols-3">
             {[t.delivery.zones, t.delivery.elsewhere, t.delivery.requirements].map((text, i) => (
-              <p key={i} data-animate="stagger-item" className="rounded-xl border border-line bg-panel p-5 text-[14.5px] leading-relaxed text-muted">
+              <p key={i} data-animate="stagger-item" className="rounded-l border border-line bg-panel p-card text-[14.5px] leading-relaxed text-muted">
                 {text}
               </p>
             ))}
@@ -210,10 +210,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </section>
 
         {/* Testimonial */}
-        <section className={`${SHELL} py-16`}>
+        <section className={`${SHELL} py-section`}>
           <Eyebrow>{t.testimonial.eyebrow}</Eyebrow>
-          <blockquote data-animate="scale-rotate" className="mt-4 rounded-2xl border border-line bg-panel p-8">
-            <p className="font-display text-[clamp(20px,2.6vw,28px)] font-semibold leading-snug tracking-[-0.02em]">
+          <blockquote data-animate="scale-rotate" className="mt-4 rounded-xl border border-line bg-panel p-card">
+            <p className="font-display text-d-3xl font-light">
               “{t.testimonial.quote}”
             </p>
             <footer className="mt-5 flex flex-wrap items-center gap-3 text-sm text-muted">
@@ -225,18 +225,18 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </section>
 
         {/* FAQ */}
-        <section id="faq" className={`${SHELL} py-16`}>
+        <section id="faq" className={`${SHELL} py-section`}>
           <Eyebrow>{t.faq.eyebrow}</Eyebrow>
-          <h2 data-split className="mb-7 mt-4 font-display text-[clamp(24px,3.2vw,34px)] font-bold tracking-[-0.03em]">
+          <h2 data-split className="mb-7 mt-4 font-display text-d-4xl font-light">
             {t.faq.title}
           </h2>
           <div data-animate="stagger-container" className="flex flex-col gap-3">
             {t.faq.items.map((f) => (
-              <details key={f.q} data-animate="stagger-item" className="group rounded-xl border border-line bg-panel p-5">
+              <details key={f.q} data-animate="stagger-item" className="group rounded-l border border-line bg-panel p-card">
                 <summary className="cursor-pointer list-none font-display text-[16.5px] font-semibold marker:content-none">
                   {f.q}
                 </summary>
-                <p className="mt-3 text-[14.5px] leading-relaxed text-muted">{f.a}</p>
+                <p className="mt-3 text-t-s text-muted">{f.a}</p>
               </details>
             ))}
           </div>
@@ -244,10 +244,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
         {/* Contact */}
         <section id="contact" className={`${SHELL} pb-20`}>
-          <div data-animate="inview-slide-up" className="flex flex-wrap items-center gap-7 rounded-2xl border border-line bg-panel p-8">
+          <div data-animate="inview-slide-up" className="flex flex-wrap items-center gap-7 rounded-xl border border-line bg-panel p-card">
             <div className="flex min-w-[280px] flex-1 flex-col gap-2">
-              <h2 className="font-display text-[clamp(22px,3vw,30px)] font-bold tracking-[-0.03em]">{t.contact.title}</h2>
-              <p className="text-[15.5px] leading-relaxed text-muted">{t.contact.body}</p>
+              <h2 className="font-display text-d-3xl font-normal">{t.contact.title}</h2>
+              <p className="text-t-m text-muted">{t.contact.body}</p>
             </div>
             <a href="tel:8736825954" className="inline-flex min-h-[54px] items-center rounded-lg bg-accent px-7 font-semibold text-on-accent">
               {t.contact.phone}

@@ -18,6 +18,41 @@
   --muted: #98a2aa;
   --accent: #22d3ee;
   --on-accent: #06212a;
+
+  /*
+   * Type scale, radii and rhythm measured from the Safeer template's own
+   * tokens (reference/SAFEER-ANALYSE.md). Safeer redefines each step at four
+   * breakpoints; clamp() reproduces the same range fluidly.
+   * Its display heading is 90px at weight 300 with -0.036em tracking — the
+   * restraint at that size is what reads as premium, so we keep it.
+   */
+  --text-8xl: clamp(40px, 6.6vw, 90px);
+  --text-7xl: clamp(34px, 4.6vw, 60px);
+  --text-6xl: clamp(32px, 4.3vw, 56px);
+  --text-5xl: clamp(30px, 3.7vw, 48px);
+  --text-4xl: clamp(28px, 3.1vw, 40px);
+  --text-3xl: clamp(24px, 2.5vw, 32px);
+  --text-2xl: clamp(22px, 1.9vw, 24px);
+  --text-xl: 20px;
+  --text-l: clamp(17px, 1.4vw, 18px);
+  --text-m: 16px;
+  --text-s: 14px;
+
+  --lh-s: 1.13;
+  --lh-m: 1.25;
+  --lh-l: 1.33;
+  --lh-xl: 1.5;
+
+  --ls-s: -0.036em;
+  --ls-m: -0.006em;
+
+  --radius-s: 0.25rem;
+  --radius-m: 0.5rem;
+  --radius-l: 0.75rem;
+  --radius-xl: 1rem;
+
+  --section-y: clamp(4.5rem, 7vw, 8rem);
+  --card-padding: clamp(0.75rem, 1.6vw, 1.5rem);
 }
 
 [data-palette="beton"] {
