@@ -5,8 +5,10 @@
  * Run this on YOUR machine, not in a Claude session — the sandbox's egress
  * policy blocks api.pexels.com and api.openverse.org outright.
  *
- *   export PEXELS_API_KEY=xxxxxxxx          # never commit this
- *   node scripts/fetch-stock.mjs
+ *   node scripts/fetch-stock.mjs --key YOUR_PEXELS_KEY
+ *
+ * The key can also come from the PEXELS_API_KEY environment variable. Either
+ * way it is never written to a file, so it cannot be committed by accident.
  *
  * Options:
  *   --source pexels|openverse   default pexels
@@ -95,11 +97,16 @@ async function fromOpenverse(query) {
 }
 
 async function main() {
-  const key = process.env.PEXELS_API_KEY;
+  const key = arg("key", process.env.PEXELS_API_KEY);
   if (SOURCE === "pexels" && !key) {
-    console.error("Set PEXELS_API_KEY first:  export PEXELS_API_KEY=xxxx");
+    console.error("\nNo Pexels key given.\n");
+    console.error("Run it like this, with your key after --key:\n");
+    console.error("   node scripts/fetch-stock.mjs --key YOUR_KEY_HERE\n");
+    console.error("Get a free key at https://www.pexels.com/api/\n");
     process.exit(1);
   }
+
+  console.log(`\nFetching from ${SOURCE}: ${QUERIES.length} searches, up to ${PER} images each.\n`);
 
   await mkdir(OUT, { recursive: true });
   const existing = new Set(existsSync(OUT) ? await readdir(OUT) : []);
@@ -150,10 +157,16 @@ async function main() {
   await mkdir(path.dirname(MANIFEST), { recursive: true });
   await writeFile(MANIFEST, JSON.stringify(manifest, null, 2) + "\n");
 
-  console.log(`\n${manifest.length} images in ${OUT}`);
+  console.log(`\nDone. ${manifest.length} images in ${OUT}`);
   console.log(`Manifest written to ${MANIFEST}`);
-  if (manifest.length < 12) {
-    console.log("\nThe drum looks best with 12+ images. Add queries and re-run.");
+  if (manifest.length === 0) {
+    console.log("\nNothing downloaded. The key is probably wrong — check it at");
+    console.log("https://www.pexels.com/api/ and try again.");
+  } else if (manifest.length < 12) {
+    console.log("\nThe drum looks best with 12 or more images.");
+    console.log("Add more searches to the QUERIES list near the top of this file, then run it again.");
+  } else {
+    console.log("\nNext: npm run dev   then open http://localhost:3000");
   }
 }
 
