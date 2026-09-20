@@ -2,9 +2,9 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import showcase from "@/lib/showcase.json";
+import { SHOWCASE } from "@/lib/media";
 
-type Shot = { src: string; alt: string; credit?: string };
+type Shot = { src: string; alt: string };
 
 /**
  * The rotating showcase drum.
@@ -26,7 +26,7 @@ const CARD_H = { base: 130, md: 198 };
 
 export default function ShowcaseDrum({ label }: { label: string }) {
   const trackRef = useRef<HTMLDivElement>(null);
-  const shots = showcase as Shot[];
+  const shots: Shot[] = SHOWCASE.map((src, i) => ({ src, alt: `${label} ${i + 1}` }));
 
   // Pad out to MIN_CARDS so the cylinder keeps its wide radius.
   const cards: (Shot | null)[] =
