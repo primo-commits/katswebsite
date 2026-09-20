@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://safeertemplate.webflow.io/ -->
+<html data-wf-domain="safeertemplate.webflow.io" data-wf-page="6a0a055c4c51324e8155fc8c" data-wf-site="6a0a055c4c51324e8155fcba" data-wf-status="1" lang="en" class="w-mod-js js-focus-visible w-mod-ix3" data-js-focus-visible=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--mui-inject-first--><style data-jss="" data-meta="MuiTouchRipple">
+.MuiTouchRipple-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.MuiTouchRipple-ripple {
+  opacity: 0;
+  position: absolute;
+}
+.MuiTouchRipple-rippleVisible {
+  opacity: 0.3;
+  animation: MuiTouchRipple-keyframes-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+.MuiTouchRipple-ripplePulsate {
+  animation-duration: 200ms;
+}
+.MuiTouchRipple-child {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+.MuiTouchRipple-childLeaving {
+  opacity: 0;
+  animation: MuiTouchRipple-keyframes-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiTouchRipple-childPulsate {
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: MuiTouchRipple-keyframes-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-enter {
+  0% {
+    opacity: 0.1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-exit {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+</style><style data-jss="" data-meta="MuiButtonBase">
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+@media print {
+  .MuiButtonBase-root {
+    -webkit-print-color-adjust: exact;
+  }
+}
+</style><style data-jss="" data-meta="MuiButton">
+.MuiButton-root {
+  color: rgba(0, 0, 0, 0.87);
+  padding: 6px 16px;
+  font-size: 0.9375rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+  border-radius: 4px;
+  text-transform: none;
+}
+.MuiButton-root:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiButton-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-root:hover.Mui-disabled {
+  background-color: transparent;
+}
+.MuiButton-label {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.MuiButton-text {
+  padding: 6px 8px;
+}
+.MuiButton-textPrimary {
+  color: #066FAC;
+}
+.MuiButton-textPrimary:hover {
+  background-color: rgba(6, 111, 172, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-textSecondary {
+  color: #FF8800;
+}
+.MuiButton-textSecondary:hover {
+  background-color: rgba(255, 136, 0, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-outlined {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  padding: 5px 15px;
+}
+.MuiButton-outlined.Mui-disabled {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiButton-outlinedPrimary {
+  color: #066FAC;
+  border: 1px solid rgba(6, 111, 172, 0.5);
+}
+.MuiButton-outlinedPrimary:hover {
+  border: 1px solid #066FAC;
+  background-color: rgba(6, 111, 172, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-outlinedSecondary {
+  color: #FF8800;
+  border: 1px solid rgba(255, 136, 0, 0.5);
+}
+.MuiButton-outlinedSecondary:hover {
+  border: 1px solid #FF8800;
+  background-color: rgba(255, 136, 0, 0.04);
+}
+.MuiButton-outlinedSecondary.Mui-disabled {
+  border: 1px solid rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-contained {
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 3px 1px -2px rgba(0,0,0,0.12);
+  background-color: #e0e0e0;
+}
+.MuiButton-contained:hover {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  background-color: #d5d5d5;
+}
+.MuiButton-contained.Mui-focusVisible {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiButton-contained:active {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiButton-contained.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 3px 1px -2px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+}
+.MuiButton-contained:hover.Mui-disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.MuiButton-containedPrimary {
+  color: #fff;
+  background-color: #066FAC;
+}
+.MuiButton-containedPrimary:hover {
+  background-color: rgb(4, 77, 120);
+}
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #066FAC;
+  }
+}
+.MuiButton-containedSecondary {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #FF8800;
+}
+.MuiButton-containedSecondary:hover {
+  background-color: rgb(178, 95, 0);
+}
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #FF8800;
+  }
+}
+.MuiButton-disableElevation {
+  box-shadow: none;
+}
+.MuiButton-disableElevation:hover {
+  box-shadow: none;
+}
+.MuiButton-disableElevation.Mui-focusVisible {
+  box-shadow: none;
+}
+.MuiButton-disableElevation:active {
+  box-shadow: none;
+}
+.MuiButton-disableElevation.Mui-disabled {
+  box-shadow: none;
+}
+.MuiButton-colorInherit {
+  color: inherit;
+  border-color: currentColor;
+}
+.MuiButton-textSizeSmall {
+  padding: 4px 5px;
+  font-size: 0.8125rem;
+}
+.MuiButton-textSizeLarge {
+  padding: 8px 11px;
+  font-size: 0.9375rem;
+}
+.MuiButton-outlinedSizeSmall {
+  padding: 3px 9px;
+  font-size: 0.8125rem;
+}
+.MuiButton-outlinedSizeLarge {
+  padding: 7px 21px;
+  font-size: 0.9375rem;
+}
+.MuiButton-containedSizeSmall {
+  padding: 4px 10px;
+  font-size: 0.8125rem;
+}
+.MuiButton-containedSizeLarge {
+  padding: 8px 22px;
+  font-size: 0.9375rem;
+}
+.MuiButton-fullWidth {
+  width: 100%;
+}
+.MuiButton-startIcon {
+  display: inherit;
+  margin-left: -4px;
+  margin-right: 8px;
+}
+.MuiButton-startIcon.MuiButton-iconSizeSmall {
+  margin-left: -2px;
+}
+.MuiButton-endIcon {
+  display: inherit;
+  margin-left: 8px;
+  margin-right: -4px;
+}
+.MuiButton-endIcon.MuiButton-iconSizeSmall {
+  margin-right: -2px;
+}
+.MuiButton-iconSizeSmall > *:first-child {
+  font-size: 18px;
+}
+.MuiButton-iconSizeMedium > *:first-child {
+  font-size: 20px;
+}
+.MuiButton-iconSizeLarge > *:first-child {
+  font-size: 22px;
+}
+</style><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><link href="https://cdn.prod.website-files.com/" rel="preconnect" crossorigin="anonymous"><title>Safeer - Webflow HTML Website Template</title><meta content="Explore Safeer — a premium travel Webflow template built for tour agencies and travel brands. Clean design, CMS-ready, and fully customizable." name="description"><meta content="Safeer - Webflow HTML Website Template" property="og:title"><meta content="Explore Safeer — a premium travel Webflow template built for tour agencies and travel brands. Clean design, CMS-ready, and fully customizable." property="og:description"><meta content="https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a2fa066d79d95a10ff95dd9_OG%20Image%20-%20Template%2012b%20(2)%20(1).png" property="og:image"><meta content="Safeer - Webflow HTML Website Template" name="twitter:title"><meta content="Explore Safeer — a premium travel Webflow template built for tour agencies and travel brands. Clean design, CMS-ready, and fully customizable." name="twitter:description"><meta property="og:type" content="website"><meta content="summary_large_image" name="twitter:card"><meta content="width=device-width, initial-scale=1" name="viewport"><meta content="Webflow" name="generator"><link href="./Safeer - Webflow HTML Website Template_files/safeertemplate.webflow.shared.766df1dbf.min.css" rel="stylesheet" type="text/css" integrity="sha384-dm3x2/VcFPZBt4grthyLm4dVGdoWsQyMObuK5+RkMLa0E/SRgvjetXvh1pmNwWNE" crossorigin="anonymous"><style>html.w-mod-js:not(.w-mod-ix3) :is([data-animate="inview-text-stagger"], .faq_content-wrapper, [data-animate="scale-rotate"], .link-text, .link-text-duplicate, .button-secondary-icon, [data-animate="slideup-item"], [data-animate="load-slide-up"], [data-animate="slide-scale"], [data-animate="inview-slide-up"], .navbar-dropdown_list, [data-animate="fade"], [data-animate="load-text-stagger"], .navigation-link_line, .section-subtitle, .display-6xl, .footer_image._01, .footer_image._02, .footer_nav-group [data-animate="slideup-item"], .footer_logo-image, .testimonial_avatar-image-wrapper, .testimonial_right-top-text, .page-hero_title .display-heading, .contact_wrapper [data-animate="slideup-item"], .utility-license_header-description, .hero_avenor-image-wrapper, .hero_house-image, .hero-title, .hero-desc, .hero-button, .hero-cards_wrapper, .about_trust-rating, .text-size-large, .about_trust-client-avatar-wrapper, .about-subtext, .about_cta-button) {visibility: hidden !important;}</style><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a0c13505d3151cf13cfd7e1_android-chrome-512x512.png" rel="icon" type="image/png" sizes="32x32" media="(prefers-color-scheme: light)"><link href="https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a0c13505d3151cf13cfd7e1_android-chrome-512x512.png" rel="icon" type="image/png" sizes="32x32" media="(prefers-color-scheme: dark)"><link href="https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a0c1350418f26adaf9c30a8_android-chrome-512x512.png" rel="icon" type="image/png" sizes="48x48"><link href="https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a0c13504a6da9c06aaf5411_android-chrome-512x512.png" rel="apple-touch-icon" sizes="180x180"><link href="https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a0c1350e0a5581c708ca62e_android-chrome-512x512.png" rel="icon" type="image/png" sizes="192x192"><link href="https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a0c13509158a5a2afa9d9bf_android-chrome-512x512.png" rel="icon" type="image/png" sizes="512x512"><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": [
+      "WebPage",
+      "TravelAgency"
+    ],
+    "name": "Safeer - Webflow HTML Website Template",
+    "description": "Explore Safeer — a premium travel Webflow template built for tour agencies and travel brands. Clean design, CMS-ready, and fully customizable.",
+    "url": "https://safeertemplate.webflow.io/",
+    "inLanguage": "en",
+    "about": {
+      "@type": "Organization",
+      "@id": "#organization",
+      "name": "Safeer",
+      "description": "Beyond destinations, connecting cultures and uncovering hidden stories.",
+      "email": "info@safeer.com",
+      "telephone": "+(222) 505-5228",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Colorado",
+        "addressCountry": "USA"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "2000"
+      },
+      "sameAs": [
+        "https://facebook.com/",
+        "https://www.instagram.com/",
+        "https://x.com/",
+        "https://linkedin.com/"
+      ]
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "TouristTrip",
+          "name": "Sahara Desert Adventure",
+          "description": "Ride camels and dune buggies across Morocco's golden Sahara dunes.",
+          "touristType": "Camel & Buggy Ride",
+          "itinerary": {
+            "@type": "Place",
+            "name": "Merzouga Desert Camp"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "65",
+            "priceCurrency": "USD",
+            "description": "per person"
+          },
+          "image": "https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcbb/6a2c30f33c02791ada474caa_TourThumbnail1.avif",
+          "url": "https://safeertemplate.webflow.io/tour/sahara-desert-adventure"
+        },
+        {
+          "@type": "TouristTrip",
+          "name": "Amalfi Coast Yacht",
+          "description": "Sail along Italy's stunning Amalfi Coast aboard a private luxury yacht.",
+          "touristType": "Private Yacht Cruise",
+          "itinerary": {
+            "@type": "Place",
+            "name": "Positano Marina"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "350",
+            "priceCurrency": "USD",
+            "description": "per person"
+          },
+          "image": "https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcbb/6a2c311e3c02791ada475e39_TourThumbnail3.avif",
+          "url": "https://safeertemplate.webflow.io/tour/amalfi-coast-yacht"
+        },
+        {
+          "@type": "TouristTrip",
+          "name": "Santorini Sunset Romance",
+          "description": "Watch a breathtaking sunset over Santorini's iconic caldera with your partner.",
+          "touristType": "Sunset Walking Tour",
+          "itinerary": {
+            "@type": "Place",
+            "name": "Oia Castle Square"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "180",
+            "priceCurrency": "USD",
+            "description": "per couple"
+          },
+          "image": "https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcbb/6a2c314a9af8fb3ca8d01186_TourThumbnail5.avif",
+          "url": "https://safeertemplate.webflow.io/tour/santorini-sunset-romance"
+        }
+      ]
+    }
+  }
+</script><script type="text/javascript">window.__WEBFLOW_CURRENCY_SETTINGS = {"currencyCode":"USD","symbol":"$","decimal":".","fractionDigits":2,"group":",","template":"{{wf {\"path\":\"symbol\",\"type\":\"PlainText\"} }} {{wf {\"path\":\"amount\",\"type\":\"CommercePrice\"} }} {{wf {\"path\":\"currencyCode\",\"type\":\"PlainText\"} }}","hideDecimalForWholeNumbers":false};</script><style data-styled="active" data-styled-version="5.3.3">.dqDCDr{width:1em;height:1em;stroke-width:0;stroke:currentColor;fill:currentColor;pointer-events:none;}.bhNaXq{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;font-size:inherit;}.vfXGH{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:48px;height:48px;color:#666666;border-radius:50%;-webkit-transition:background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;transition:background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;cursor:pointer;box-shadow:0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12);-webkit-transition:background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;transition:background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;font-size:24px;}.vfXGH:active{box-shadow:0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);}@media (hover:hover) and (pointer:fine){.vfXGH:hover{background-color:rgba(102,102,102,0.08);color:rgba(102,102,102,0.88);}}.vfXGH:active{color:#666666;}.vfXGH.focus-visible,.vfXGH[data-focus-visible-added]{background-color:rgba(102,102,102,0.16);}.vfXGH.focus-visible:active,.vfXGH[data-focus-visible-added]:active{color:rgba(102,102,102,0.88);}.vfXGH.RcIconButton-persistBg{background-color:rgba(102,102,102,0.12);}.vfXGH.RcIconButton-disabled{color:#C7C7C7;}.vfXGH.RcIconButton-invisible{opacity:0;visibility:hidden;width:0;height:0;}.vfXGH.RcIconButton-outline{border:1px solid #C7C7C7;}.vfXGH.RcIconButton-contained{color:#fff;background-color:#666666;}.vfXGH.RcIconButton-contained.RcIconButton-disabled{background-color:#E5E5E5;color:#939393;}.vfXGH.RcIconButton-contained:before{content:'';left:0;right:0;top:0;bottom:0;width:100%;height:100%;border-radius:50%;position:absolute;}@media (hover:hover) and (pointer:fine){.vfXGH.RcIconButton-contained:hover{color:#fff;}.vfXGH.RcIconButton-contained:hover:before{background-color:rgba(255,255,255,0.08);}}.vfXGH.RcIconButton-contained.focus-visible,.vfXGH.RcIconButton-contained[data-focus-visible-added]{color:#fff;}.vfXGH.RcIconButton-contained.focus-visible:before,.vfXGH.RcIconButton-contained[data-focus-visible-added]:before{background-color:rgba(255,255,255,0.16);}.vfXGH.RcIconButton-contained:active{color:#fff;}.vfXGH .RcIconButtonTouchRipple-ripplePulsate{border-radius:0;-webkit-animation-name:none;animation-name:none;opacity:0;}.lnudDN{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:32px;height:32px;color:#666666;border-radius:50%;-webkit-transition:background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;transition:background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;cursor:pointer;font-size:16px;}@media (hover:hover) and (pointer:fine){.lnudDN:hover{background-color:rgba(102,102,102,0.08);color:rgba(102,102,102,0.88);}}.lnudDN:active{color:#666666;}.lnudDN.focus-visible,.lnudDN[data-focus-visible-added]{background-color:rgba(102,102,102,0.16);}.lnudDN.focus-visible:active,.lnudDN[data-focus-visible-added]:active{color:rgba(102,102,102,0.88);}.lnudDN.RcIconButton-persistBg{background-color:rgba(102,102,102,0.12);}.lnudDN.RcIconButton-disabled{color:#C7C7C7;}.lnudDN.RcIconButton-invisible{opacity:0;visibility:hidden;width:0;height:0;}.lnudDN.RcIconButton-outline{border:1px solid #C7C7C7;}.lnudDN.RcIconButton-contained{color:#fff;background-color:#666666;}.lnudDN.RcIconButton-contained.RcIconButton-disabled{background-color:#E5E5E5;color:#939393;}.lnudDN.RcIconButton-contained:before{content:'';left:0;right:0;top:0;bottom:0;width:100%;height:100%;border-radius:50%;position:absolute;}@media (hover:hover) and (pointer:fine){.lnudDN.RcIconButton-contained:hover{color:#fff;}.lnudDN.RcIconButton-contained:hover:before{background-color:rgba(255,255,255,0.08);}}.lnudDN.RcIconButton-contained.focus-visible,.lnudDN.RcIconButton-contained[data-focus-visible-added]{color:#fff;}.lnudDN.RcIconButton-contained.focus-visible:before,.lnudDN.RcIconButton-contained[data-focus-visible-added]:before{background-color:rgba(255,255,255,0.16);}.lnudDN.RcIconButton-contained:active{color:#fff;}.lnudDN .RcIconButtonTouchRipple-ripplePulsate{border-radius:0;-webkit-animation-name:none;animation-name:none;opacity:0;}.iwLYty{text-transform:none;font-size:0.9375rem;font-weight:700;font-family:Lato,Helvetica,Arial,sans-serif;text-align:center;box-shadow:unset;border-radius:4px;}.iwLYty .RcButton-startIcon{margin-right:8px;margin-left:0;}.iwLYty .RcButton-endIcon{margin-left:8px;margin-right:0;}.iwLYty.RcButton-text{color:#066FAC;padding:4px;min-width:unset;line-height:1;}.iwLYty.RcButton-text.RcButton-disabled{color:#C7C7C7;}@media (hover:hover) and (pointer:fine){.iwLYty.RcButton-text:hover{background-color:rgba(6,111,172,0.08);}}@media (hover:hover) and (pointer:fine){.iwLYty.RcButton-text:hover{color:rgba(6,111,172,0.8);background-color:transparent;}}.iwLYty.RcButton-text.focus-visible,.iwLYty.RcButton-text[data-focus-visible-added]{background-color:transparent;}.iwLYty.RcButton-text.focus-visible:after,.iwLYty.RcButton-text[data-focus-visible-added]:after{pointer-events:none;content:'';position:absolute;inset:0;margin:calc(-0px - 0px);border-radius:calc(0px + 4px);box-shadow:inset 0 0 0 2px #066FAC;}.iwLYty.RcButton-text:active.RcButton-text{color:rgba(6,111,172,0.64);}.iwLYty.RcButton-contained{color:#fff;background-color:#066FAC;}@media (hover:hover) and (pointer:fine){.iwLYty.RcButton-contained:hover{background-color:rgba(6,111,172,0.92);}}.iwLYty.RcButton-contained.RcButton-disabled{background-color:#E5E5E5;color:#939393;}.iwLYty.RcButton-outlined{color:#066FAC;border-color:#066FAC;padding:0px 15px;}@media (hover:hover) and (pointer:fine){.iwLYty.RcButton-outlined:hover{background-color:rgba(6,111,172,0.08);}}.iwLYty.RcButton-outlined.RcButton-disabled{color:#C7C7C7;border-color:#C7C7C7;}</style><style>#src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk {
+  user-select: none;
+  user-drag: none;
+  display: none;
+  height: 30px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  transition: opacity 0.1s 0s linear;
+  z-index: 2147483647;
+}
+#src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_visible_mEW3O {
+  display: block;
+}
+#src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk .src-widgets-BuiltinWidget-_styles_c2dWrapper_v8pYg {
+  user-select: none;
+  user-drag: none;
+  position: relative;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-sizing: border-box;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  font-size: 0px;
+  height: 30px;
+  white-space: nowrap;
+  margin: 0 0 0 5px;
+}
+#src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk .src-widgets-BuiltinWidget-_styles_c2dWrapper_v8pYg > img.src-widgets-BuiltinWidget-_styles_c2dLogo_gBsgM {
+  height: 30px;
+  width: 30px;
+  max-width: 30px;
+  min-width: 30px;
+  margin: -1px 0 0 -1px;
+  vertical-align: baseline !important;
+  display: inline-block !important;
+}
+#src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk .src-widgets-BuiltinWidget-_styles_arrow_pWfWX {
+  position: absolute;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid #cfcfcf;
+  top: calc(50% - 5px);
+  left: 0;
+  height: 0;
+  width: 0;
+}
+#src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk .src-widgets-BuiltinWidget-_styles_innerArrow_L1vrh {
+  position: absolute;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid var(--c2d-arrow-color, #ff8800);
+  top: calc(50% - 5px);
+  left: 1px;
+}
+#src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_left_kmAO8 .src-widgets-BuiltinWidget-_styles_c2dWrapper_v8pYg {
+  margin: 0 5px 0 0;
+}
+#src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_left_kmAO8 .src-widgets-BuiltinWidget-_styles_arrow_pWfWX {
+  border-right: none;
+  border-left: 5px solid #cfcfcf;
+  left: initial;
+  right: 0;
+}
+#src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_left_kmAO8 .src-widgets-BuiltinWidget-_styles_innerArrow_L1vrh {
+  border-right: none;
+  border-left: 5px solid #fff;
+  left: initial;
+  right: 1px;
+}
+#src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk .src-widgets-BuiltinWidget-_styles_btn_lsv7O, #src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk .src-widgets-BuiltinWidget-_styles_textBtn_BlZA5, #src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk .src-widgets-BuiltinWidget-_styles_callBtn_ZQO39 {
+  display: none;
+  position: relative;
+  vertical-align: top;
+  cursor: pointer;
+  font-size: 18px;
+  height: 28px;
+  width: 28px;
+  line-height: 28px;
+  text-align: center;
+}
+#src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk .src-widgets-BuiltinWidget-_styles_btn_lsv7O svg, #src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk .src-widgets-BuiltinWidget-_styles_textBtn_BlZA5 svg, #src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk .src-widgets-BuiltinWidget-_styles_callBtn_ZQO39 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  overflow: visible !important;
+}
+#src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk .src-widgets-BuiltinWidget-_styles_btn_lsv7O svg > path, #src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk .src-widgets-BuiltinWidget-_styles_textBtn_BlZA5 svg > path, #src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk .src-widgets-BuiltinWidget-_styles_callBtn_ZQO39 svg > path {
+  fill: #066fac;
+  stroke: #066fac;
+}
+#src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk .src-widgets-BuiltinWidget-_styles_btn_lsv7O:hover, #src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk .src-widgets-BuiltinWidget-_styles_textBtn_BlZA5:hover, #src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk .src-widgets-BuiltinWidget-_styles_callBtn_ZQO39:hover {
+  opacity: 0.6;
+}
+#src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk .src-widgets-BuiltinWidget-_styles_btn_lsv7O.src-widgets-BuiltinWidget-_styles_visible_mEW3O, #src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk .src-widgets-BuiltinWidget-_styles_visible_mEW3O.src-widgets-BuiltinWidget-_styles_textBtn_BlZA5, #src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk .src-widgets-BuiltinWidget-_styles_visible_mEW3O.src-widgets-BuiltinWidget-_styles_callBtn_ZQO39 {
+  display: inline-block;
+}
+#src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk .src-widgets-BuiltinWidget-_styles_separatorLine_RYpwW {
+  display: none;
+  width: 1px;
+  height: 19px;
+  margin: 5px 0;
+  background: #cdcdcd;
+}
+#src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk .src-widgets-BuiltinWidget-_styles_separatorLine_RYpwW:hover {
+  opacity: 0.6;
+}
+#src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk.src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk .src-widgets-BuiltinWidget-_styles_separatorLine_RYpwW.src-widgets-BuiltinWidget-_styles_visible_mEW3O {
+  display: inline-block;
+}
+.src-widgets-BuiltinWidget-_styles_hack_nGodw {
+  background: url("https://rc-hack-c2d.detect");
+}</style></head><body><div class="page-wrapper"><div class="global-styles w-embed"><style>
+  /* Make text look crisper and more legible in all browsers */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Focus state style for keyboard navigation for the focusable elements */
+  *[tabindex]:focus-visible,
+  input[type='file']:focus-visible {
+    outline: 0.125rem solid #e6eb24;
+    outline-offset: 0.125rem;
+  }
+
+  /* Set color style to inherit */
+  .inherit-color * {
+    color: inherit;
+  }
+
+  /* Get rid of top margin on first element in any rich text element */
+  .w-richtext > :not(div):first-child,
+  .w-richtext > div:first-child > :first-child {
+    margin-top: 0 !important;
+  }
+
+  /* Get rid of bottom margin on last element in any rich text element */
+  .w-richtext > :last-child,
+  .w-richtext ol li:last-child,
+  .w-richtext ul li:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* Make sure containers never lose their center alignment */
+  .container-medium,
+  .container-small,
+  .container-large {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  /* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+  /*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+
+  /* Apply "..." after 3 lines of text */
+  .text-style-3lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  /* Apply "..." after 2 lines of text */
+  .text-style-2lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  /* These classes are never overwritten */
+  .hide {
+    display: none !important;
+  }
+
+  @media screen and (max-width: 991px) {
+    .hide,
+    .hide-tablet {
+      display: none !important;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape {
+      display: none !important;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    .hide-mobile {
+      display: none !important;
+    }
+  }
+
+  .margin-0 {
+    margin: 0rem !important;
+  }
+
+  .padding-0 {
+    padding: 0rem !important;
+  }
+
+  .spacing-clean {
+    padding: 0rem !important;
+    margin: 0rem !important;
+  }
+
+  .margin-top {
+    margin-right: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 0rem !important;
+  }
+
+  .padding-top {
+    padding-right: 0rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+  }
+
+  .margin-right {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 0rem !important;
+  }
+
+  .padding-right {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+  }
+
+  .margin-bottom {
+    margin-top: 0rem !important;
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+  }
+
+  .padding-bottom {
+    padding-top: 0rem !important;
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+  }
+
+  .margin-left {
+    margin-top: 0rem !important;
+    margin-right: 0rem !important;
+    margin-bottom: 0rem !important;
+  }
+
+  .padding-left {
+    padding-top: 0rem !important;
+    padding-right: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+
+  .margin-horizontal {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+  }
+
+  .padding-horizontal {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+
+  .margin-vertical {
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+  }
+
+  .padding-vertical {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+  }
+
+  /* Custom CSS by Weabers */
+  .w-lightbox-figure {
+    height: 75vh;
+  }
+
+  /* Button Start */
+  .button-primary {
+    filter: url(#gooey);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .button-primary_icon-block,
+  .button-primary_icon-block-err {
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .button-primary:hover .button-primary_icon-block {
+    transform: translateX(-8px);
+  }
+
+  .button-primary:hover .button-primary_icon-block-err {
+    transform: translateX(8px);
+  }
+
+  /* Blog Excerpt 2 Line */
+  .blog-card-excerpt {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Contact Input Field Icon */
+  .contact-select-field {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    background-image: url('https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a30622bb94b335b1079d764_Frame.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: right 12px center !important;
+    background-size: 16px auto !important;
+  }
+
+  /* Contact Date Field Icon */
+  .contact-date-field::-webkit-calendar-picker-indicator {
+    display: none !important;
+    -webkit-appearance: none !important;
+  }
+
+  .contact-date-field {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    background-image: url('https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a3063e8eafa5524de4f4549_Frame%20(1).png') !important;
+    background-repeat: no-repeat !important;
+    background-position: right 12px center !important;
+    background-size: 16px auto !important;
+  }
+
+  /* Tours */
+  .tour-item:nth-child(even) .tour-cards_wrapper {
+    direction: rtl;
+  }
+
+  .tour-item:nth-child(even) .tour-cards_wrapper > * {
+    direction: ltr;
+  }
+
+  /* Trip */
+  @media screen and (min-width: 992px) {
+    .trip-item:nth-child(2) .trip-card,
+    .trip-item:nth-child(3) .trip-card {
+      height: 388px;
+    }
+  }
+
+  html:not(.w-mod-ix3) .about-card_image {
+    clip-path: inset(0% 0 0 0);
+  }
+
+  /* Stagger Start */
+  /* Column mapping */
+  .tour-cards_wrapper [data-animate='stagger-item'] {
+    --cols: var(--_cards---tour-column);
+  }
+  .trip-grid [data-animate='stagger-item'] {
+    --cols: var(--_cards---trip-column);
+  }
+  .contact_info-cards [data-animate='stagger-item'] {
+    --cols: var(--_cards---contact-info-column);
+  }
+  .blog-list [data-animate='stagger-item'] {
+    --cols: var(--_cards---blog-column);
+  }
+  .gallery-row [data-animate='stagger-item'] {
+    --cols: 2;
+  }
+  /* Initial state */
+  [data-animate='stagger-item'] {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  html:not(.w-mod-ix3) [data-animate='stagger-item'] {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* Stagger */
+  [data-animate='stagger-item'].is-visible {
+    --animation-mode: 1;
+    --step-or-max-delay: 0.5s;
+    --expo-base: 0.5;
+    --index: mod(sibling-index() - 1, var(--cols));
+    --linear-part: var(--index);
+    --expo-part: calc(1 - pow(var(--expo-base), var(--index)));
+    --final-curve: calc((var(--linear-part) * (1 - var(--animation-mode))) + (var(--expo-part) * var(--animation-mode)));
+    transition-delay: calc(var(--final-curve) * var(--step-or-max-delay));
+  }
+  /* Stagger End */
+</style></div><div class="main-wrapper"><div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav"><div class="padding-global"><div class="container-large w-container"><div class="navbar_wrapper"><div class="logo_wrapper is-mobile"><div class="logo-bg-wrapper"><div class="logo-bg w-embed"><svg width="280" height="48" viewBox="0 0 280 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="
+    M0 0
+    Q18 0 24 14
+    L38 42
+    Q40 48 50 48
+    H230
+    Q240 48 242 42
+    L256 14
+    Q262 0 280 0
+    Z
+  " fill="currentColor"></path>
+</svg></div></div><div class="logo-image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a2fc008edf65cc458ffdf74_Frame 2147259912.png" loading="lazy" alt="" class="logo-image"></div></div><nav role="navigation" class="navigation w-nav-menu"><div class="navigation-link_wrap"><div class="navigation-link-group"><div class="navigation-link_wrapper"><a href="https://safeertemplate.webflow.io/" aria-current="page" class="navigation-link w-inline-block w--current"><div class="navigation-link_text">Home</div><div class="navigation-link_line" style="translate: none; rotate: none; scale: none; transform: translate(-100%, 0%) translate3d(0px, 0px, 0px);"></div></a></div><div class="navigation-link_wrapper"><a href="https://safeertemplate.webflow.io/about" class="navigation-link w-inline-block"><div class="navigation-link_text">About</div><div class="navigation-link_line" style="translate: none; rotate: none; scale: none; transform: translate(-100%, 0%) translate3d(0px, 0px, 0px);"></div></a></div><div class="navigation-link_wrapper"><a href="https://safeertemplate.webflow.io/tour" class="navigation-link w-inline-block"><div class="navigation-link_text">Tour</div><div class="navigation-link_line" style="translate: none; rotate: none; scale: none; transform: translate(-100%, 0%) translate3d(0px, 0px, 0px);"></div></a></div></div><div class="logo_wrapper"><div class="logo-bg-wrapper"><div class="logo-bg w-embed"><svg width="280" height="48" viewBox="0 0 280 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="
+    M0 0
+    Q18 0 24 14
+    L38 42
+    Q40 48 50 48
+    H230
+    Q240 48 242 42
+    L256 14
+    Q262 0 280 0
+    Z
+  " fill="currentColor"></path>
+</svg></div></div><div class="logo-image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a2fc008edf65cc458ffdf74_Frame 2147259912.png" loading="lazy" alt="" class="logo-image"></div></div><div class="navigation-link-group"><div class="navigation-link_wrapper"><a href="https://safeertemplate.webflow.io/gallery" class="navigation-link w-inline-block"><div class="navigation-link_text">Gallery</div><div class="navigation-link_line" style="translate: none; rotate: none; scale: none; transform: translate(-100%, 0%) translate3d(0px, 0px, 0px);"></div></a></div><div class="navigation-link_wrapper"><a href="https://safeertemplate.webflow.io/blog" class="navigation-link w-inline-block"><div class="navigation-link_text">Blog</div><div class="navigation-link_line" style="translate: none; rotate: none; scale: none; transform: translate(-100%, 0%) translate3d(0px, 0px, 0px);"></div></a></div><div class="navigation-link_wrapper"><a href="https://safeertemplate.webflow.io/contact" class="text-button is-nav w-inline-block"><div class="text-button-content"><div class="navigation-link_text">Book Now</div><div class="text-button-icon"><div class="arrow-top-icon w-embed" style="translate: none; rotate: none; scale: none; transform: translate3d(0%, 0px, 0px);"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div><div class="arrow-top-icon hover w-embed" style="translate: none; rotate: none; scale: none; transform: translate3d(0%, 0px, 0px);"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div></div></div></a></div></div></div></nav><div class="nav-menu-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false"><div class="menu-button-line-wrapper"><div class="menu-button-line1"></div><div class="menu-button-line2"></div><div class="menu-button-line3"></div></div></div></div></div></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div></div><section class="section_hero"><div class="padding-global"><div class="w-layout-blockcontainer container-large w-container"><div class="hero_wrapper"><div class="hero-content_wrapper"><div class="hero-title" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><h1 class="display-heading text-color-white">Explore the Best Natural Places</h1></div><div class="hero-desc" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><p class="display-xl text-color-white is-mobile">We organize tours, photo stops, and guided routes to scenic spots with clear schedules and easy booking.</p></div><div class="hero-button" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><a data-wf--button-primary--variant="base" href="https://safeertemplate.webflow.io/tour" class="button-primary w-inline-block"><div class="button-primary_text-block"><div class="button-primary_text">Start Your Trip</div></div><div class="button-primary_icon-block"><div class="button-primary_icon w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div></div><div class="gooey-effect w-embed"><svg width="0" height="0" style="position: absolute">
+  <defs>
+    <filter id="gooey" x="-20%" y="-50%" width="140%" height="200%">
+      <fegaussianblur in="SourceGraphic" stdDeviation="3" result="blur"></fegaussianblur>
+      <fecolormatrix in="blur" mode="matrix" values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 22 -9" result="goo"></fecolormatrix>
+      <fecomposite in="SourceGraphic" in2="goo" operator="atop"></fecomposite>
+    </filter>
+  </defs>
+</svg></div></a></div></div><div class="hero-cards_wrapper" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="three-d_wrapper"><div class="three-d_track"><div class="three-d_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a116390c871525c24556d93_footerImg.avif" loading="lazy" alt="Large orange sandstone rock formations in a desert under a clear blue sky." class="three-d_image"></div><div class="three-d_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a11638f1837367567b84c18_footerImg2.avif" loading="lazy" alt="Person walking alone on sand dunes in a vast desert under clear blue sky." class="three-d_image"></div><div class="three-d_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a0c1d7512326646631b39e8_testimonialBanner.avif" loading="lazy" alt="Desert landscape with scattered trees and large sand dunes under a clear blue sky." class="three-d_image"></div><div class="three-d_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a2e829b5182a5b586e2a29a_TourThumbnail4.avif" loading="lazy" alt="Coastal landscape with terraced hillsides, scattered houses, turquoise sea, and cloudy sky." class="three-d_image"></div><div class="three-d_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a212c2046c9ca5ac240c59d_ContactHero.avif" loading="lazy" sizes="(max-width: 479px) 38vw, (max-width: 767px) 36vw, (max-width: 991px) 34vw, 336px" srcset="https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a212c2046c9ca5ac240c59d_ContactHero-p-500.avif 500w, https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a212c2046c9ca5ac240c59d_ContactHero-p-800.avif 800w, https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a212c2046c9ca5ac240c59d_ContactHero-p-1080.avif 1080w, https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a212c2046c9ca5ac240c59d_ContactHero.avif 2136w" alt="Trail leading to a green mountain peak with two hikers and snowy mountains in the background." class="three-d_image"></div><div class="three-d_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a2e829a635d5e15f3b14bd3_TourThumbnail5.avif" loading="lazy" alt="Sunset over Santorini with white buildings and iconic blue-domed churches by the sea." class="three-d_image"></div><div class="three-d_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a2e82ae11337841f09f62a4_TripThumbnail3.avif" loading="lazy" alt="Dubai skyline at sunset featuring the Burj Khalifa and surrounding skyscrapers with highways below." class="three-d_image"></div><div class="three-d_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a2e82c475b3d1a493f7e835_BlogThumbnail1.avif" loading="lazy" alt="Narrow canyon path leading to ancient rock-carved structure with columns and a person walking." class="three-d_image"></div><div class="three-d_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a212bceeec4dcf6ad4bc7b9_ErrorPageBanner.avif" loading="lazy" sizes="(max-width: 767px) 81vw, (max-width: 991px) 79vw, 778px" srcset="https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a212bceeec4dcf6ad4bc7b9_ErrorPageBanner-p-500.avif 500w, https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a212bceeec4dcf6ad4bc7b9_ErrorPageBanner-p-800.avif 800w, https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a212bceeec4dcf6ad4bc7b9_ErrorPageBanner-p-1080.avif 1080w, https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a212bceeec4dcf6ad4bc7b9_ErrorPageBanner.avif 2136w" alt="Dirt road through dry grassland with eroded rock formations under a blue sky with scattered clouds." class="three-d_image"></div><div class="three-d_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a2e82ae3f9feeabc205dfbb_TripThumbnail2.avif" loading="lazy" alt="Rocky mountain trail with snow-capped peaks and a glacier under a partly cloudy blue sky." class="three-d_image"></div><div class="three-d_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a2e829bd8c767bf9ace1e90_TourThumbnail7.avif" loading="lazy" alt="Snowy mountain peaks with green hills and wildflowers under a clear blue sky." class="three-d_image"></div><div class="three-d_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a2e82c5b835d8b6697dafa6_BlogThumbnail3.avif" loading="lazy" alt="Empty road running through red rock desert landscape with distant mesas under blue sky." class="three-d_image"></div><div class="three-d_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a2e82ae3f9feeabc205dfbb_TripThumbnail2.avif" loading="lazy" alt="Rocky mountain trail with snow-capped peaks and a glacier under a partly cloudy blue sky." class="three-d_image"></div><div class="three-d_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a2e829bd8c767bf9ace1e90_TourThumbnail7.avif" loading="lazy" alt="Snowy mountain peaks with green hills and wildflowers under a clear blue sky." class="three-d_image"></div></div></div><div class="_3d_css w-embed"><style>
+  .three-d_wrapper {
+    perspective: 2500px;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+
+    mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+  }
+  .three-d_track {
+    --quantity: 14;
+    transform-style: preserve-3d;
+    animation: autoRun 50s linear infinite;
+  }
+
+  .three-d_image-wrapper {
+    backface-visibility: hidden;
+    transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(480px);
+  }
+
+  .three-d_image-wrapper:nth-child(1) {
+    --position: 1;
+  }
+  .three-d_image-wrapper:nth-child(2) {
+    --position: 2;
+  }
+  .three-d_image-wrapper:nth-child(3) {
+    --position: 3;
+  }
+  .three-d_image-wrapper:nth-child(4) {
+    --position: 4;
+  }
+  .three-d_image-wrapper:nth-child(5) {
+    --position: 5;
+  }
+  .three-d_image-wrapper:nth-child(6) {
+    --position: 6;
+  }
+  .three-d_image-wrapper:nth-child(7) {
+    --position: 7;
+  }
+  .three-d_image-wrapper:nth-child(8) {
+    --position: 8;
+  }
+  .three-d_image-wrapper:nth-child(9) {
+    --position: 9;
+  }
+  .three-d_image-wrapper:nth-child(10) {
+    --position: 10;
+  }
+  .three-d_image-wrapper:nth-child(11) {
+    --position: 11;
+  }
+  .three-d_image-wrapper:nth-child(12) {
+    --position: 12;
+  }
+  .three-d_image-wrapper:nth-child(13) {
+    --position: 13;
+  }
+  .three-d_image-wrapper:nth-child(14) {
+    --position: 14;
+  }
+
+  @keyframes autoRun {
+    from {
+      transform: rotateX(6deg) rotateY(0deg);
+    }
+    to {
+      transform: rotateX(6deg) rotateY(-360deg);
+    }
+  }
+</style></div></div></div></div></div><div class="black-overlay"></div></section><section class="section_about"><div class="padding-global"><div class="w-layout-blockcontainer container-medium w-container"><div class="about_wrapper"><div class="about_title-wrapper is-mobile"><div class="section-title_wrapper is-about"><div class="section-subtitle" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="text-size-regular">(About Us)</div></div><div class="section-title is-about"><h2 class="display-4xl" aria-label="Travel Deeper Connect Cultures Discover Essence"><div class="gsap_split_line gsap_split_line1" aria-hidden="true" style="position: relative; display: block; text-align: start; translate: none; rotate: none; scale: none; opacity: 0; transform: translate3d(0px, 25px, 0px);">Travel Deeper Connect Cultures Discover Essence</div></h2></div></div></div><div class="about_left"><div class="section-subtitle hide-mobile-landscape" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="text-size-regular">(About Us)</div></div><div class="about_trust-block"><div class="about_trust-rating" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="about_trust-number"><div class="display-5xl">4.8</div></div><div class="about_trust-rating-icon"><div class="rating-star-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09112 2.40659C8.42712 1.59884 9.57312 1.59884 9.90912 2.40659L11.4706 6.16109L15.5236 6.48659C16.3966 6.55634 16.7506 7.64534 16.0854 8.21534L12.9976 10.8606L13.9404 14.8153C14.1436 15.6673 13.2174 16.3401 12.4704 15.8841L9.00012 13.7646L5.52987 15.8841C4.78287 16.3401 3.85662 15.6666 4.05987 14.8153L5.00262 10.8606L1.91487 8.21534C1.24962 7.64534 1.60362 6.55634 2.47662 6.48659L6.52962 6.16109L8.09112 2.40659Z" fill="currentColor"></path>
+</svg></div><div class="rating-star-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09112 2.40659C8.42712 1.59884 9.57312 1.59884 9.90912 2.40659L11.4706 6.16109L15.5236 6.48659C16.3966 6.55634 16.7506 7.64534 16.0854 8.21534L12.9976 10.8606L13.9404 14.8153C14.1436 15.6673 13.2174 16.3401 12.4704 15.8841L9.00012 13.7646L5.52987 15.8841C4.78287 16.3401 3.85662 15.6666 4.05987 14.8153L5.00262 10.8606L1.91487 8.21534C1.24962 7.64534 1.60362 6.55634 2.47662 6.48659L6.52962 6.16109L8.09112 2.40659Z" fill="currentColor"></path>
+</svg></div><div class="rating-star-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09112 2.40659C8.42712 1.59884 9.57312 1.59884 9.90912 2.40659L11.4706 6.16109L15.5236 6.48659C16.3966 6.55634 16.7506 7.64534 16.0854 8.21534L12.9976 10.8606L13.9404 14.8153C14.1436 15.6673 13.2174 16.3401 12.4704 15.8841L9.00012 13.7646L5.52987 15.8841C4.78287 16.3401 3.85662 15.6666 4.05987 14.8153L5.00262 10.8606L1.91487 8.21534C1.24962 7.64534 1.60362 6.55634 2.47662 6.48659L6.52962 6.16109L8.09112 2.40659Z" fill="currentColor"></path>
+</svg></div><div class="rating-star-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09112 2.40659C8.42712 1.59884 9.57312 1.59884 9.90912 2.40659L11.4706 6.16109L15.5236 6.48659C16.3966 6.55634 16.7506 7.64534 16.0854 8.21534L12.9976 10.8606L13.9404 14.8153C14.1436 15.6673 13.2174 16.3401 12.4704 15.8841L9.00012 13.7646L5.52987 15.8841C4.78287 16.3401 3.85662 15.6666 4.05987 14.8153L5.00262 10.8606L1.91487 8.21534C1.24962 7.64534 1.60362 6.55634 2.47662 6.48659L6.52962 6.16109L8.09112 2.40659Z" fill="currentColor"></path>
+</svg></div><div class="rating-star-icon is-gray w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09112 2.40659C8.42712 1.59884 9.57312 1.59884 9.90912 2.40659L11.4706 6.16109L15.5236 6.48659C16.3966 6.55634 16.7506 7.64534 16.0854 8.21534L12.9976 10.8606L13.9404 14.8153C14.1436 15.6673 13.2174 16.3401 12.4704 15.8841L9.00012 13.7646L5.52987 15.8841C4.78287 16.3401 3.85662 15.6666 4.05987 14.8153L5.00262 10.8606L1.91487 8.21534C1.24962 7.64534 1.60362 6.55634 2.47662 6.48659L6.52962 6.16109L8.09112 2.40659Z" fill="currentColor"></path>
+</svg></div></div></div><div class="text-size-large" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);">Satisfied Customers</div><div class="about_trust-client-avatar-wrapper" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="about_trust-client"><img src="./Safeer - Webflow HTML Website Template_files/6a0c1d75924f1a779caa4170_manAvatar1.png" loading="lazy" alt="Portrait of a man with short curly hair and glasses looking to the side." class="about_trust-avatar"></div><div class="about_trust-client"><img src="./Safeer - Webflow HTML Website Template_files/6a0c1d75652ef2a1ed6f9d82_manAvatar2.png" loading="lazy" alt="Smiling man with glasses and black shirt looking to the side in a circular frame." class="about_trust-avatar"></div><div class="about_trust-client"><img src="./Safeer - Webflow HTML Website Template_files/6a0c1d74af9d47ac3fa6ce50_manAvatar3.png" loading="lazy" alt="Smiling man with curly brown hair wearing a dark blue shirt against a blurred background." class="about_trust-avatar"></div><div class="about_trust-client is-text"><div class="text-size-regular text-color-white">2K+</div></div></div></div></div><div class="about_right"><div class="section-title hide-mobile-landscape"><h2 class="display-4xl" aria-label="Travel Deeper Connect Cultures Discover Essence"><div class="gsap_split_line gsap_split_line1" aria-hidden="true" style="position: relative; display: block; text-align: start; translate: none; rotate: none; scale: none; opacity: 0; transform: translate3d(0px, 25px, 0px);">Travel Deeper Connect </div><div class="gsap_split_line gsap_split_line2" aria-hidden="true" style="position: relative; display: block; text-align: start; translate: none; rotate: none; scale: none; opacity: 0; transform: translate3d(0px, 25px, 0px);">Cultures Discover Essence</div></h2></div><div class="about-cards_wrapper"><div class="about-card"><div class="about-card_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a0c1d742f721ec2b4a7aad6_about1.avif" loading="lazy" alt="Person walking alone on a ridge of large sand dunes under clear blue sky." class="about-card_image _01" style="--_size---animation--about-image-clip-path: 100%;"></div></div><div class="about-card"><div class="about-card_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a0c1d75810dde956a99f9cb_about2.avif" loading="lazy" alt="Sunlit red sandstone rock formations in a wide desert under a blue sky with a few clouds." class="about-card_image _02" style="--_size---animation--about-image-clip-path: 100%;"></div></div><div class="about-card is-details"><div class="about-subtext" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><p class="display-xl">Beyond destinations, connecting cultures and uncovering hidden stories.</p></div><div class="about_trust-block is-mobile" style=""><div class="about_trust-rating" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="about_trust-number"><div class="display-5xl">4.8</div></div><div class="about_trust-rating-icon"><div class="rating-star-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09112 2.40659C8.42712 1.59884 9.57312 1.59884 9.90912 2.40659L11.4706 6.16109L15.5236 6.48659C16.3966 6.55634 16.7506 7.64534 16.0854 8.21534L12.9976 10.8606L13.9404 14.8153C14.1436 15.6673 13.2174 16.3401 12.4704 15.8841L9.00012 13.7646L5.52987 15.8841C4.78287 16.3401 3.85662 15.6666 4.05987 14.8153L5.00262 10.8606L1.91487 8.21534C1.24962 7.64534 1.60362 6.55634 2.47662 6.48659L6.52962 6.16109L8.09112 2.40659Z" fill="currentColor"></path>
+</svg></div><div class="rating-star-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09112 2.40659C8.42712 1.59884 9.57312 1.59884 9.90912 2.40659L11.4706 6.16109L15.5236 6.48659C16.3966 6.55634 16.7506 7.64534 16.0854 8.21534L12.9976 10.8606L13.9404 14.8153C14.1436 15.6673 13.2174 16.3401 12.4704 15.8841L9.00012 13.7646L5.52987 15.8841C4.78287 16.3401 3.85662 15.6666 4.05987 14.8153L5.00262 10.8606L1.91487 8.21534C1.24962 7.64534 1.60362 6.55634 2.47662 6.48659L6.52962 6.16109L8.09112 2.40659Z" fill="currentColor"></path>
+</svg></div><div class="rating-star-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09112 2.40659C8.42712 1.59884 9.57312 1.59884 9.90912 2.40659L11.4706 6.16109L15.5236 6.48659C16.3966 6.55634 16.7506 7.64534 16.0854 8.21534L12.9976 10.8606L13.9404 14.8153C14.1436 15.6673 13.2174 16.3401 12.4704 15.8841L9.00012 13.7646L5.52987 15.8841C4.78287 16.3401 3.85662 15.6666 4.05987 14.8153L5.00262 10.8606L1.91487 8.21534C1.24962 7.64534 1.60362 6.55634 2.47662 6.48659L6.52962 6.16109L8.09112 2.40659Z" fill="currentColor"></path>
+</svg></div><div class="rating-star-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09112 2.40659C8.42712 1.59884 9.57312 1.59884 9.90912 2.40659L11.4706 6.16109L15.5236 6.48659C16.3966 6.55634 16.7506 7.64534 16.0854 8.21534L12.9976 10.8606L13.9404 14.8153C14.1436 15.6673 13.2174 16.3401 12.4704 15.8841L9.00012 13.7646L5.52987 15.8841C4.78287 16.3401 3.85662 15.6666 4.05987 14.8153L5.00262 10.8606L1.91487 8.21534C1.24962 7.64534 1.60362 6.55634 2.47662 6.48659L6.52962 6.16109L8.09112 2.40659Z" fill="currentColor"></path>
+</svg></div><div class="rating-star-icon is-gray w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09112 2.40659C8.42712 1.59884 9.57312 1.59884 9.90912 2.40659L11.4706 6.16109L15.5236 6.48659C16.3966 6.55634 16.7506 7.64534 16.0854 8.21534L12.9976 10.8606L13.9404 14.8153C14.1436 15.6673 13.2174 16.3401 12.4704 15.8841L9.00012 13.7646L5.52987 15.8841C4.78287 16.3401 3.85662 15.6666 4.05987 14.8153L5.00262 10.8606L1.91487 8.21534C1.24962 7.64534 1.60362 6.55634 2.47662 6.48659L6.52962 6.16109L8.09112 2.40659Z" fill="currentColor"></path>
+</svg></div></div></div><div class="about_trust-customer-label"><div class="text-size-large" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);">Satisfied Customers</div></div><div class="about_trust-client-avatar-wrapper" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="about_trust-client"><img src="./Safeer - Webflow HTML Website Template_files/6a0c1d75924f1a779caa4170_manAvatar1.png" loading="lazy" alt="Portrait of a man with short curly hair and glasses looking to the side." class="about_trust-avatar"></div><div class="about_trust-client"><img src="./Safeer - Webflow HTML Website Template_files/6a0c1d75652ef2a1ed6f9d82_manAvatar2.png" loading="lazy" alt="Smiling man with glasses and black shirt looking to the side in a circular frame." class="about_trust-avatar"></div><div class="about_trust-client"><img src="./Safeer - Webflow HTML Website Template_files/6a0c1d74af9d47ac3fa6ce50_manAvatar3.png" loading="lazy" alt="Smiling man with curly brown hair wearing a dark blue shirt against a blurred background." class="about_trust-avatar"></div><div class="about_trust-client is-text"><div class="text-size-regular text-color-white">2K+</div></div></div></div><div class="about_cta-button" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><a data-wf--button-primary--variant="black" href="https://safeertemplate.webflow.io/about" class="button-primary w-variant-aa47f556-39e1-483f-bca7-de3d66f12e32 w-inline-block"><div class="button-primary_text-block w-variant-aa47f556-39e1-483f-bca7-de3d66f12e32"><div class="button-primary_text">More About Us</div></div><div class="button-primary_icon-block w-variant-aa47f556-39e1-483f-bca7-de3d66f12e32"><div class="button-primary_icon w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div></div><div class="gooey-effect w-embed"><svg width="0" height="0" style="position: absolute">
+  <defs>
+    <filter id="gooey" x="-20%" y="-50%" width="140%" height="200%">
+      <fegaussianblur in="SourceGraphic" stdDeviation="3" result="blur"></fegaussianblur>
+      <fecolormatrix in="blur" mode="matrix" values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 22 -9" result="goo"></fecolormatrix>
+      <fecomposite in="SourceGraphic" in2="goo" operator="atop"></fecomposite>
+    </filter>
+  </defs>
+</svg></div></a></div></div></div></div></div></div></div></section><section class="section_our-tour"><div class="padding-global"><div class="w-layout-blockcontainer container-large w-container"><div class="our-tour_wrapper"><div class="our-tou_top-row"><div class="section-title_wrapper is-tour"><div class="section-subtitle is-tour" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="text-size-regular">(Our Tour)</div></div><div class="section-title is-tour"><h2 class="display-6xl" aria-label="Perfect Desert Journeys for Every Explorer"><div class="gsap_split_line gsap_split_line1" aria-hidden="true" style="position: relative; display: block; text-align: start; translate: none; rotate: none; scale: none; opacity: 0; transform: translate3d(0px, 25px, 0px);">Perfect Desert Journeys </div><div class="gsap_split_line gsap_split_line2" aria-hidden="true" style="position: relative; display: block; text-align: start; translate: none; rotate: none; scale: none; opacity: 0; transform: translate3d(0px, 25px, 0px);">for Every Explorer</div></h2></div></div><div data-animate="inview-slide-up" class="tour-home-cta" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><a data-wf--button-primary--variant="base" href="https://safeertemplate.webflow.io/tour" class="button-primary w-inline-block"><div class="button-primary_text-block"><div class="button-primary_text">All Tours</div></div><div class="button-primary_icon-block"><div class="button-primary_icon w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div></div><div class="gooey-effect w-embed"><svg width="0" height="0" style="position: absolute">
+  <defs>
+    <filter id="gooey" x="-20%" y="-50%" width="140%" height="200%">
+      <fegaussianblur in="SourceGraphic" stdDeviation="3" result="blur"></fegaussianblur>
+      <fecolormatrix in="blur" mode="matrix" values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 22 -9" result="goo"></fecolormatrix>
+      <fecomposite in="SourceGraphic" in2="goo" operator="atop"></fecomposite>
+    </filter>
+  </defs>
+</svg></div></a></div></div><div class="our-tour_content-wrapper"><div class="tour-list-wrapper w-dyn-list"><div role="list" class="tour-list w-dyn-items"><div role="listitem" class="tour-item w-dyn-item"><div class="tour-cards_wrapper"><div data-animate="stagger-item" class="tour-card is-details-dark is-visible"><div class="tour-card_title"><h3 class="display-2xl text-color-white">Sahara Desert Adventure</h3></div><div class="tour-card_desc"><p class="text-size-regular text-color-white-secondary">Ride camels and dune buggies across Morocco's golden Sahara dunes.</p></div><div class="tour-card_details-wrapper"><div class="tour-card_col"><div class="tour-card_col-title"><div class="text-size-large text-color-white">Tour Type:</div></div><div class="tour-card_col-details"><div class="text-size-regular text-color-white-secondary">Camel / Buggy</div></div></div><div class="tour-card_line"></div><div class="tour-card_col"><div class="tour-card_col-title"><div class="text-size-large text-color-white">Meeting point:</div></div><div class="tour-card_col-details"><div class="text-size-regular text-color-white-secondary">Desert Camp</div></div></div></div><div class="tour-card_cta-wrapper"><div class="tour-card_price-wrapper"><div class="tour-price"><div class="display-xl text-color-white">$</div><div class="display-xl text-color-white">65</div></div><div class="tour_member"><div class="text-size-regular text-color-white">/</div><div class="text-size-regular text-color-white">per person</div></div></div><div class="tour-card_cta-button"><a data-wf--button-secondary--variant="base" href="https://safeertemplate.webflow.io/tour/sahara-desert-adventure" class="text-button w-inline-block"><div class="text-button-content"><div class="navigation-link_text">Explore Now</div><div class="text-button-icon"><div class="arrow-top-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div><div class="arrow-top-icon hover w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div></div></div><div class="text-button_line"></div></a></div></div></div><div data-animate="stagger-item" class="tour-card image-01 is-visible"><div class="tour-card_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a2c30f33c02791ada474caa_TourThumbnail1.avif" loading="lazy" alt="Golden sand dunes of the Sahara Desert at sunset" class="tour-card_image"></div></div><div data-animate="stagger-item" class="tour-card image-02 is-visible"><div class="tour-card_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a2c30fb3c02791ada474e69_TourThumbnail2.avif" loading="lazy" alt="Dune buggy driving through Sahara sand dunes" class="tour-card_image"></div></div></div></div><div role="listitem" class="tour-item w-dyn-item"><div class="tour-cards_wrapper"><div data-animate="stagger-item" class="tour-card is-details-dark is-visible"><div class="tour-card_title"><h3 class="display-2xl text-color-white">Amalfi Coast Yacht</h3></div><div class="tour-card_desc"><p class="text-size-regular text-color-white-secondary">Sail along Italy's stunning Amalfi Coast aboard a private luxury yacht.</p></div><div class="tour-card_details-wrapper"><div class="tour-card_col"><div class="tour-card_col-title"><div class="text-size-large text-color-white">Tour Type:</div></div><div class="tour-card_col-details"><div class="text-size-regular text-color-white-secondary">Yacht Cruise</div></div></div><div class="tour-card_line"></div><div class="tour-card_col"><div class="tour-card_col-title"><div class="text-size-large text-color-white">Meeting point:</div></div><div class="tour-card_col-details"><div class="text-size-regular text-color-white-secondary">Positano Marina</div></div></div></div><div class="tour-card_cta-wrapper"><div class="tour-card_price-wrapper"><div class="tour-price"><div class="display-xl text-color-white">$</div><div class="display-xl text-color-white">350</div></div><div class="tour_member"><div class="text-size-regular text-color-white">/</div><div class="text-size-regular text-color-white">per person</div></div></div><div class="tour-card_cta-button"><a data-wf--button-secondary--variant="base" href="https://safeertemplate.webflow.io/tour/amalfi-coast-yacht" class="text-button w-inline-block"><div class="text-button-content"><div class="navigation-link_text">Explore Now</div><div class="text-button-icon"><div class="arrow-top-icon w-embed" style="translate: none; rotate: none; scale: none; transform: translate3d(0%, 0px, 0px);"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div><div class="arrow-top-icon hover w-embed" style="translate: none; rotate: none; scale: none; transform: translate3d(0%, 0px, 0px);"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div></div></div><div class="text-button_line"></div></a></div></div></div><div data-animate="stagger-item" class="tour-card image-01 is-visible"><div class="tour-card_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a2c311e3c02791ada475e39_TourThumbnail3.avif" loading="lazy" alt="Luxury yacht sailing along the Amalfi Coast cliffs" class="tour-card_image"></div></div><div data-animate="stagger-item" class="tour-card image-02 is-visible"><div class="tour-card_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a2c31289c98ea0d15fc264d_TourThumbnail4.avif" loading="lazy" alt="Aerial view of Amalfi Coast cliffs and turquoise water" class="tour-card_image"></div></div></div></div><div role="listitem" class="tour-item w-dyn-item"><div class="tour-cards_wrapper"><div data-animate="stagger-item" class="tour-card is-details-dark is-visible"><div class="tour-card_title"><h3 class="display-2xl text-color-white">Santorini Sunset Romance</h3></div><div class="tour-card_desc"><p class="text-size-regular text-color-white-secondary">Watch a breathtaking sunset over Santorini's iconic caldera with your partner.</p></div><div class="tour-card_details-wrapper"><div class="tour-card_col"><div class="tour-card_col-title"><div class="text-size-large text-color-white">Tour Type:</div></div><div class="tour-card_col-details"><div class="text-size-regular text-color-white-secondary">Walking / Sunset</div></div></div><div class="tour-card_line"></div><div class="tour-card_col"><div class="tour-card_col-title"><div class="text-size-large text-color-white">Meeting point:</div></div><div class="tour-card_col-details"><div class="text-size-regular text-color-white-secondary">Oia Castle</div></div></div></div><div class="tour-card_cta-wrapper"><div class="tour-card_price-wrapper"><div class="tour-price"><div class="display-xl text-color-white">$</div><div class="display-xl text-color-white">180</div></div><div class="tour_member"><div class="text-size-regular text-color-white">/</div><div class="text-size-regular text-color-white">per couple</div></div></div><div class="tour-card_cta-button"><a data-wf--button-secondary--variant="base" href="https://safeertemplate.webflow.io/tour/santorini-sunset-romance" class="text-button w-inline-block"><div class="text-button-content"><div class="navigation-link_text">Explore Now</div><div class="text-button-icon"><div class="arrow-top-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div><div class="arrow-top-icon hover w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div></div></div><div class="text-button_line"></div></a></div></div></div><div data-animate="stagger-item" class="tour-card image-01 is-visible"><div class="tour-card_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a2c314a9af8fb3ca8d01186_TourThumbnail5.avif" loading="lazy" alt="Couple watching sunset over Santorini caldera" class="tour-card_image"></div></div><div data-animate="stagger-item" class="tour-card image-02 is-visible"><div class="tour-card_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a2c314f185131be24a414d8_TourThumbnail6.avif" loading="lazy" alt="Sunset view over Oia village and caldera cliffs" class="tour-card_image"></div></div></div></div></div></div></div><div data-animate="inview-slide-up" class="tour-home-cta is-mobile" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><a data-wf--button-primary--variant="base" href="https://safeertemplate.webflow.io/tour" class="button-primary w-inline-block"><div class="button-primary_text-block"><div class="button-primary_text">Explore Tours</div></div><div class="button-primary_icon-block"><div class="button-primary_icon w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div></div><div class="gooey-effect w-embed"><svg width="0" height="0" style="position: absolute">
+  <defs>
+    <filter id="gooey" x="-20%" y="-50%" width="140%" height="200%">
+      <fegaussianblur in="SourceGraphic" stdDeviation="3" result="blur"></fegaussianblur>
+      <fecolormatrix in="blur" mode="matrix" values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 22 -9" result="goo"></fecolormatrix>
+      <fecomposite in="SourceGraphic" in2="goo" operator="atop"></fecomposite>
+    </filter>
+  </defs>
+</svg></div></a></div></div></div></div></section><section class="section_explore-trip"><div class="padding-global"><div class="w-layout-blockcontainer container-large w-container"><div class="explore-trip_wrapper"><div class="section-title_wrapper is-trip"><div class="section-subtitle" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="text-size-regular">(Explore Trip)</div></div><div class="section-title is-trip"><h2 class="display-6xl" aria-label="Explore Scenic Routes Across Natural Landscapes"><div class="gsap_split_line gsap_split_line1" aria-hidden="true" style="position: relative; display: block; text-align: center; translate: none; rotate: none; scale: none; opacity: 0; transform: translate3d(0px, 25px, 0px);">Explore Scenic Routes </div><div class="gsap_split_line gsap_split_line2" aria-hidden="true" style="position: relative; display: block; text-align: center; translate: none; rotate: none; scale: none; opacity: 0; transform: translate3d(0px, 25px, 0px);">Across Natural Landscapes</div></h2></div></div><div class="trip_grid"><div class="trip-list-wrapper w-dyn-list"><div data-animate="slideup-item-container" role="list" class="trip-list w-dyn-items"><div data-animate="stagger-item" role="listitem" class="trip-item w-dyn-item is-visible"><div data-hover-trigger="scale-up" class="trip-card"><div class="trip-card_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a2c31b69af8fb3ca8d10dac_TripThumbnail1.avif" loading="lazy" data-hover-target="scale-up" alt="Aerial view of Maldives overwater villas and turquoise lagoon" class="trip-card_image" style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px);"><div class="black-overlay is-trip"></div></div><div class="trip-card_content-wrapper"><div class="trip-name"><h3 class="display-2xl text-color-white">Maldives Beach Escape</h3></div><div class="trip-card_button"><a aria-label="trip-details-button" href="https://safeertemplate.webflow.io/trip/maldives-honeymoon-escape" class="arrow-button w-inline-block"><div class="arrow-button-icons"><div class="arrow-button-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div><div class="arrow-button-icon is-hover w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div></div></a></div></div></div></div><div data-animate="stagger-item" role="listitem" class="trip-item w-dyn-item is-visible"><div data-hover-trigger="scale-up" class="trip-card"><div class="trip-card_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a2c31d3d920e32b45fff8d2_TripThumbnail2.avif" loading="lazy" data-hover-target="scale-up" alt="Hikers trekking near Patagonia glaciers and mountains" class="trip-card_image" style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px);"><div class="black-overlay is-trip"></div></div><div class="trip-card_content-wrapper"><div class="trip-name"><h3 class="display-2xl text-color-white">Patagonia Mountain Trek</h3></div><div class="trip-card_button"><a aria-label="trip-details-button" href="https://safeertemplate.webflow.io/trip/patagonia-adventure-expedition" class="arrow-button w-inline-block"><div class="arrow-button-icons"><div class="arrow-button-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div><div class="arrow-button-icon is-hover w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div></div></a></div></div></div></div><div data-animate="stagger-item" role="listitem" class="trip-item w-dyn-item is-visible"><div data-hover-trigger="scale-up" class="trip-card"><div class="trip-card_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a2c31ebde57237aed4924ba_TripThumbnail3.avif" loading="lazy" data-hover-target="scale-up" alt="Dubai skyline with luxury skyscrapers at sunset" class="trip-card_image" style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px);"><div class="black-overlay is-trip"></div></div><div class="trip-card_content-wrapper"><div class="trip-name"><h3 class="display-2xl text-color-white">Dubai Luxury Getaway</h3></div><div class="trip-card_button"><a aria-label="trip-details-button" href="https://safeertemplate.webflow.io/trip/dubai-luxury-getaway" class="arrow-button w-inline-block"><div class="arrow-button-icons"><div class="arrow-button-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div><div class="arrow-button-icon is-hover w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div></div></a></div></div></div></div><div data-animate="stagger-item" role="listitem" class="trip-item w-dyn-item is-visible"><div data-hover-trigger="scale-up" class="trip-card"><div class="trip-card_image-wrapper"><img src="./Safeer - Webflow HTML Website Template_files/6a2c320d772ddffecc1e3168_TripThumbnail4.avif" loading="lazy" data-hover-target="scale-up" alt="Hiker on jungle trail overlooking Bali volcano" class="trip-card_image" style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px);"><div class="black-overlay is-trip"></div></div><div class="trip-card_content-wrapper"><div class="trip-name"><h3 class="display-2xl text-color-white">Bali Adventure Trail</h3></div><div class="trip-card_button"><a aria-label="trip-details-button" href="https://safeertemplate.webflow.io/trip/bali-adventure-trail" class="arrow-button w-inline-block"><div class="arrow-button-icons"><div class="arrow-button-icon w-embed" style="translate: none; rotate: none; scale: none; transform: translate3d(0%, 0%, 0px);"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div><div class="arrow-button-icon is-hover w-embed" style="translate: none; rotate: none; scale: none; transform: translate3d(0%, 0%, 0px);"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div></div></a></div></div></div></div></div></div></div></div></div></div></section><section class="section_brand-video"><div class="padding-global"><div class="w-layout-blockcontainer container-large w-container"><div class="brand-video_wrapper" style="--_size---animation--sqaure-clip-path: 25%;"><div class="brand-video_lightbox"><a href="https://safeertemplate.webflow.io/#" class="brand-video_lightbox-link w-inline-block w-lightbox" aria-label="open lightbox" aria-haspopup="dialog"><img src="./Safeer - Webflow HTML Website Template_files/6a0c1d77dded8207c435161e_videoSceneThumbnail.avif" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px" srcset="https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a0c1d77dded8207c435161e_videoSceneThumbnail-p-500.avif 500w, https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a0c1d77dded8207c435161e_videoSceneThumbnail-p-800.avif 800w, https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a0c1d77dded8207c435161e_videoSceneThumbnail-p-1080.avif 1080w, https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a0c1d77dded8207c435161e_videoSceneThumbnail.avif 2136w" alt="Dirt road through dry grass desert with rocky hills and blue sky with scattered clouds." class="brand-video_image"><div class="brand-video_content-wrapper"><div class="brand-video_top"><div class="brand-video_number"><div class="display-5xl text-color-white">98%</div></div><div class="brand-video_trust-text top"><p class="display-xl text-color-white">Guests say felt truly <br>connected to nature.</p></div></div><div class="brand-video_bottom"><div class="brand-video_trust-text"><p class="display-xl text-color-white">Every visit leaves something behind - calm, wonder, and a story to tell.</p></div></div></div><div class="brand-video_icon-wrapper"><div class="brand-video-icon"><div class="play-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M11.6556 5.81253C12.4784 6.28626 12.4798 7.47303 11.6581 7.94872L1.86492 13.6185C1.04326 14.0942 0.0147783 13.502 0.0136423 12.5526L0.000102185 1.23653C-0.00103383 0.287115 1.02603 -0.307501 1.84882 0.166226L11.6556 5.81253Z" fill="currentColor"></path>
+</svg></div></div></div><div class="black-overlay is-brand-video"></div><script type="application/json" class="w-json">{
+  "items": [
+    {
+      "url": "https://vimeo.com/1201340699",
+      "originalUrl": "https://vimeo.com/1201340699",
+      "width": 940,
+      "height": 529,
+      "thumbnailUrl": "https://i.vimeocdn.com/video/2168661762-7198d9d5c1269ee82f7f6c8c2817140f370df985d7982597c60272811cd17a8f-d_1280?region=us",
+      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1201340699%3Fapp_id%3D122963&dntp=1&display_name=Vimeo&url=https%3A%2F%2Fvimeo.com%2F1201340699&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2168661762-7198d9d5c1269ee82f7f6c8c2817140f370df985d7982597c60272811cd17a8f-d_1280%3Fregion%3Dus&type=text%2Fhtml&schema=vimeo\" width=\"940\" height=\"529\" scrolling=\"no\" title=\"Vimeo embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\"></iframe>",
+      "type": "video"
+    }
+  ],
+  "group": ""
+}</script></a></div></div></div></div></section><section data-wf-component-id="09b749c3-eb62-4dd4-4718-21443f7e4240" data-wf-variant-state="base" class="section_testimonial"><div class="padding-global"><div class="w-layout-blockcontainer container-medium w-container"><div class="testimonial_wrapper"><div class="section-title_wrapper is-testimonial"><div class="section-subtitle" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="text-size-regular">(Testimonial)</div></div><div class="section-title is-testimonial"><h2 class="display-6xl" aria-label="Travelers Share Their lovelyMoments of Our Tours"><div class="gsap_split_line gsap_split_line1" aria-hidden="true" style="position: relative; display: block; text-align: center; translate: none; rotate: none; scale: none; opacity: 0; transform: translate3d(0px, 25px, 0px);">Travelers Share Their lovely</div><div class="gsap_split_line gsap_split_line2" aria-hidden="true" style="position: relative; display: block; text-align: center; translate: none; rotate: none; scale: none; opacity: 0; transform: translate3d(0px, 25px, 0px);">Moments of Our Tours</div></h2></div></div><div class="testimonail_content-wrapper"><div class="testimonial_left"><div data-animate="inview-slide-up" class="testimonail_featured-image-wrapper" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><img loading="lazy" src="./Safeer - Webflow HTML Website Template_files/6a0c1d7512326646631b39e8_testimonialBanner.avif" alt="Desert landscape with scattered trees and large sand dunes under a clear blue sky." class="testimonial_featured-image"><div class="black-overlay is-testimonial"></div><div class="testimonial_right-top is-mobile"><div class="testimonial_avatars"><div class="testimonial_avatar-image-wrapper" style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px); opacity: 1;"><img loading="lazy" src="./Safeer - Webflow HTML Website Template_files/6a2a7d7a1b1908e75d224baf_client3.avif" alt="Smiling man with glasses wearing a black t-shirt against a plain gray background." class="testimonial_avatar-image"></div><div class="testimonial_avatar-image-wrapper" style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px); opacity: 1;"><img loading="lazy" src="./Safeer - Webflow HTML Website Template_files/6a2a7d7bfdd7dcf35fb73532_client2.avif" alt="Smiling young woman with short dark hair wearing a beige zip-up jacket against a light green background." class="testimonial_avatar-image"></div><div class="testimonial_avatar-image-wrapper" style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px); opacity: 1;"><img loading="lazy" src="./Safeer - Webflow HTML Website Template_files/6a2a7d7b487a17b84ae9a585_client1.avif" alt="Smiling man with beard wearing black shirt, sitting with clasped hands in a wood-paneled room." class="testimonial_avatar-image"></div><div class="testimonial_avatar-image-wrapper is-04" style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px); opacity: 1;"><img loading="lazy" src="./Safeer - Webflow HTML Website Template_files/6a2a7d7b7755e2245d307f16_client4.avif" alt="Young woman with hoop earrings and light jacket looking up against a pale blue background." class="testimonial_avatar-image"></div></div><div class="testimonial_right-top-text" style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px); opacity: 1;"><div class="testimonial_right-top-number"><div class="display-5xl text-color-white">2k+</div></div><div class="testimonial_right-top-desc"><div class="display-xl text-color-white">Happy Traveller Worldwide</div></div></div></div><div class="testimonial_featured-content"><div class="testimonial_featured-number"><div class="display-5xl text-color-white">92%</div></div><div class="testimonial_featured-desc"><div class="display-xl text-color-white">Traveller satisfaction Rate</div></div></div></div></div><div class="testimonial_right"><div class="testimonial_right-top"><div class="testimonial_avatars"><div class="testimonial_avatar-image-wrapper" style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px); opacity: 1;"><img loading="lazy" src="./Safeer - Webflow HTML Website Template_files/6a2a7d7b487a17b84ae9a585_client1.avif" alt="Smiling man with beard wearing black shirt, sitting with clasped hands in a wood-paneled room." class="testimonial_avatar-image"></div><div class="testimonial_avatar-image-wrapper" style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px); opacity: 1;"><img loading="lazy" src="./Safeer - Webflow HTML Website Template_files/6a2a7d7bfdd7dcf35fb73532_client2.avif" alt="Smiling young woman with short dark hair wearing a beige zip-up jacket against a light green background." class="testimonial_avatar-image"></div><div class="testimonial_avatar-image-wrapper" style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px); opacity: 1;"><img loading="lazy" src="./Safeer - Webflow HTML Website Template_files/6a2a7d7a1b1908e75d224baf_client3.avif" alt="Smiling man with glasses wearing a black t-shirt against a plain gray background." class="testimonial_avatar-image"></div><div class="testimonial_avatar-image-wrapper is-04" style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px); opacity: 1;"><img loading="lazy" src="./Safeer - Webflow HTML Website Template_files/6a2a7d7b7755e2245d307f16_client4.avif" alt="Young woman with hoop earrings and light jacket looking up against a pale blue background." class="testimonial_avatar-image"></div></div><div class="testimonial_right-top-text" style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px); opacity: 1;"><div class="testimonial_right-top-number"><div class="display-5xl">2k+</div></div><div class="testimonial_right-top-desc"><div class="display-xl">Happy Traveller Worldwide</div></div></div></div><div data-animate="inview-slide-up" class="testimonial-slider_wrapper" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div data-delay="4000" data-animation="slide" class="testimonial-slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true" role="region" aria-label="carousel"><div class="testimonial-mask w-slider-mask" id="w-slider-mask-0"><div class="testimonial-slide w-slide" aria-label="1 of 5" role="group" style="transition: all; transform: translateX(0px); opacity: 1;"><div data-wf--testimonial-slider--variant="5-rating" class="testimonial-card"><div class="testimonial-card_rating"><div class="star-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor"></path>
+</svg></div><div class="star-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor"></path>
+</svg></div><div class="star-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor"></path>
+</svg></div><div class="star-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor"></path>
+</svg></div><div class="star-icon is-full w-variant-7cf130ac-69be-92f5-d17a-9cee300b4870 w-embed"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor"></path>
+</svg></div><div class="star-icon is-half w-variant-7cf130ac-69be-92f5-d17a-9cee300b4870 w-embed"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M13 4.024v-.005c0-.053.002-.353-.217-.632a1.013 1.013 0 0 0-1.176-.315c-.192.076-.315.193-.35.225-.052.05-.094.1-.122.134a4.358 4.358 0 0 0-.31.457c-.207.343-.484.84-.773 1.375a168.719 168.719 0 0 0-1.606 3.074h-.002l-4.599.367c-1.775.14-2.495 2.339-1.143 3.488L6.17 15.14l-1.06 4.406c-.412 1.72 1.472 3.078 2.992 2.157l3.94-2.388c.592-.359.958-.996.958-1.692v-13.6Zm-2.002 0v.025-.025Z" fill="currentColor"></path>
+</svg></div></div><div class="testimonial-card_quote"><p class="display-3xl">“We booked last minute and everything went smoothly - highly recommend the Scenic Hike Trail for an unforgettable, seamless, and truly good experience!”</p></div><div class="testimonial-card_client-details"><div class="testimonial-client-avatars-wrapper"><img loading="lazy" src="./Safeer - Webflow HTML Website Template_files/6a2faa2c1450647b066688e5_avatar5.avif" alt="Smiling young woman with wavy brown hair, wearing white top and gold jewelry against muted background." sizes="100vw" srcset="https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a2faa2c1450647b066688e5_avatar5-p-500.avif 500w, https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a2faa2c1450647b066688e5_avatar5-p-800.avif 800w, https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a2faa2c1450647b066688e5_avatar5.avif 820w" class="testimonial-client-avatar"></div><div class="testimonial-client-details"><div class="testimonial-client-name"><div class="display-xl">Maren Calloway</div></div><div class="testimonial-client-designation"><div class="text-size-regular text-color-secondary">Weekend Hiker</div></div></div></div></div></div><div class="testimonial-slide w-slide" aria-label="2 of 5" role="group" aria-hidden="true" style="transition: all; transform: translateX(0px); opacity: 1;"><div data-wf--testimonial-slider--variant="base-4-5-rating" class="testimonial-card" aria-hidden="true"><div class="testimonial-card_rating" aria-hidden="true"><div class="star-icon w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div><div class="star-icon w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div><div class="star-icon w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div><div class="star-icon w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div><div class="star-icon is-full w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div><div class="star-icon is-half w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M13 4.024v-.005c0-.053.002-.353-.217-.632a1.013 1.013 0 0 0-1.176-.315c-.192.076-.315.193-.35.225-.052.05-.094.1-.122.134a4.358 4.358 0 0 0-.31.457c-.207.343-.484.84-.773 1.375a168.719 168.719 0 0 0-1.606 3.074h-.002l-4.599.367c-1.775.14-2.495 2.339-1.143 3.488L6.17 15.14l-1.06 4.406c-.412 1.72 1.472 3.078 2.992 2.157l3.94-2.388c.592-.359.958-.996.958-1.692v-13.6Zm-2.002 0v.025-.025Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div></div><div class="testimonial-card_quote" aria-hidden="true"><p class="display-3xl" aria-hidden="true">“Our family trip to the forest reserve was nothing short of magical — easy to book, amazing guides, and memories that will last us an entire lifetime!"</p></div><div class="testimonial-card_client-details" aria-hidden="true"><div class="testimonial-client-avatars-wrapper" aria-hidden="true"><img loading="lazy" src="./Safeer - Webflow HTML Website Template_files/6a2faa2ab835d8b669c051c0_avatar2.avif" alt="Man with tousled dark hair wearing an open white linen shirt by the ocean at sunset." sizes="100vw" srcset="https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a2faa2ab835d8b669c051c0_avatar2-p-500.avif 500w, https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a2faa2ab835d8b669c051c0_avatar2-p-800.avif 800w, https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a2faa2ab835d8b669c051c0_avatar2.avif 820w" class="testimonial-client-avatar" aria-hidden="true"></div><div class="testimonial-client-details" aria-hidden="true"><div class="testimonial-client-name" aria-hidden="true"><div class="display-xl" aria-hidden="true">Bram Stellan</div></div><div class="testimonial-client-designation" aria-hidden="true"><div class="text-size-regular text-color-secondary" aria-hidden="true">Family Traveler</div></div></div></div></div></div><div class="testimonial-slide w-slide" aria-label="3 of 5" role="group" aria-hidden="true" style="transition: all; transform: translateX(0px); opacity: 1;"><div data-wf--testimonial-slider--variant="5-rating" class="testimonial-card" aria-hidden="true"><div class="testimonial-card_rating" aria-hidden="true"><div class="star-icon w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div><div class="star-icon w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div><div class="star-icon w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div><div class="star-icon w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div><div class="star-icon is-full w-variant-7cf130ac-69be-92f5-d17a-9cee300b4870 w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div><div class="star-icon is-half w-variant-7cf130ac-69be-92f5-d17a-9cee300b4870 w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M13 4.024v-.005c0-.053.002-.353-.217-.632a1.013 1.013 0 0 0-1.176-.315c-.192.076-.315.193-.35.225-.052.05-.094.1-.122.134a4.358 4.358 0 0 0-.31.457c-.207.343-.484.84-.773 1.375a168.719 168.719 0 0 0-1.606 3.074h-.002l-4.599.367c-1.775.14-2.495 2.339-1.143 3.488L6.17 15.14l-1.06 4.406c-.412 1.72 1.472 3.078 2.992 2.157l3.94-2.388c.592-.359.958-.996.958-1.692v-13.6Zm-2.002 0v.025-.025Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div></div><div class="testimonial-card_quote" aria-hidden="true"><p class="display-3xl" aria-hidden="true">“The guided mountain trek was beyond what we imagined — stunning views, a professional team, and every detail handled perfectly for a truly memorable trip!"</p></div><div class="testimonial-card_client-details" aria-hidden="true"><div class="testimonial-client-avatars-wrapper" aria-hidden="true"><img loading="lazy" src="./Safeer - Webflow HTML Website Template_files/6a2faa2aba9edcf2effe7219_avatar4.avif" alt="Man with a beard wearing a beige sweatshirt looking thoughtfully into the distance against a blue sky." sizes="100vw" srcset="https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a2faa2aba9edcf2effe7219_avatar4-p-500.avif 500w, https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a2faa2aba9edcf2effe7219_avatar4-p-800.avif 800w, https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a2faa2aba9edcf2effe7219_avatar4.avif 820w" class="testimonial-client-avatar" aria-hidden="true"></div><div class="testimonial-client-details" aria-hidden="true"><div class="testimonial-client-name" aria-hidden="true"><div class="display-xl" aria-hidden="true">Idris Nwosu</div></div><div class="testimonial-client-designation" aria-hidden="true"><div class="text-size-regular text-color-secondary" aria-hidden="true">Travel Blogger</div></div></div></div></div></div><div class="testimonial-slide w-slide" aria-label="4 of 5" role="group" aria-hidden="true" style="transition: all; transform: translateX(0px); opacity: 1;"><div data-wf--testimonial-slider--variant="5-rating" class="testimonial-card" aria-hidden="true"><div class="testimonial-card_rating" aria-hidden="true"><div class="star-icon w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div><div class="star-icon w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div><div class="star-icon w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div><div class="star-icon w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div><div class="star-icon is-full w-variant-7cf130ac-69be-92f5-d17a-9cee300b4870 w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div><div class="star-icon is-half w-variant-7cf130ac-69be-92f5-d17a-9cee300b4870 w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M13 4.024v-.005c0-.053.002-.353-.217-.632a1.013 1.013 0 0 0-1.176-.315c-.192.076-.315.193-.35.225-.052.05-.094.1-.122.134a4.358 4.358 0 0 0-.31.457c-.207.343-.484.84-.773 1.375a168.719 168.719 0 0 0-1.606 3.074h-.002l-4.599.367c-1.775.14-2.495 2.339-1.143 3.488L6.17 15.14l-1.06 4.406c-.412 1.72 1.472 3.078 2.992 2.157l3.94-2.388c.592-.359.958-.996.958-1.692v-13.6Zm-2.002 0v.025-.025Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div></div><div class="testimonial-card_quote" aria-hidden="true"><p class="display-3xl" aria-hidden="true">“Five stars — the canyon tour was smooth, the staff were exceptional, and the landscapes were far more breathtaking than any photo we had ever seen before!"</p></div><div class="testimonial-card_client-details" aria-hidden="true"><div class="testimonial-client-avatars-wrapper" aria-hidden="true"><img loading="lazy" src="./Safeer - Webflow HTML Website Template_files/6a2faa28e9c46aeb43caf74b_avatar1.avif" alt="Young man with shoulder-length hair smiling, wearing a gray jacket over a white shirt by water." sizes="100vw" srcset="https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a2faa28e9c46aeb43caf74b_avatar1-p-500.avif 500w, https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a2faa28e9c46aeb43caf74b_avatar1-p-800.avif 800w, https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a2faa28e9c46aeb43caf74b_avatar1.avif 820w" class="testimonial-client-avatar" aria-hidden="true"></div><div class="testimonial-client-details" aria-hidden="true"><div class="testimonial-client-name" aria-hidden="true"><div class="display-xl" aria-hidden="true">Zaid Elmore</div></div><div class="testimonial-client-designation" aria-hidden="true"><div class="text-size-regular text-color-secondary" aria-hidden="true">Outdoor Enthusiast</div></div></div></div></div></div><div class="testimonial-slide w-slide" aria-label="5 of 5" role="group" aria-hidden="true" style="transition: all; transform: translateX(0px); opacity: 1;"><div data-wf--testimonial-slider--variant="base-4-5-rating" class="testimonial-card" aria-hidden="true"><div class="testimonial-card_rating" aria-hidden="true"><div class="star-icon w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div><div class="star-icon w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div><div class="star-icon w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div><div class="star-icon w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div><div class="star-icon is-full w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9896 2.67313C9.36293 1.77562 10.6363 1.77562 11.0096 2.67313L12.7446 6.84479L17.2479 7.20646C18.2179 7.28396 18.6113 8.49396 17.8721 9.12729L14.4413 12.0665L15.4888 16.4606C15.7146 17.4073 14.6854 18.1548 13.8554 17.6481L9.9996 15.2931L6.14376 17.6481C5.31376 18.1548 4.2846 17.4065 4.51043 16.4606L5.55793 12.0665L2.1271 9.12729C1.38793 8.49396 1.78126 7.28396 2.75126 7.20646L7.2546 6.84479L8.9896 2.67313Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div><div class="star-icon is-half w-embed" aria-hidden="true"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M13 4.024v-.005c0-.053.002-.353-.217-.632a1.013 1.013 0 0 0-1.176-.315c-.192.076-.315.193-.35.225-.052.05-.094.1-.122.134a4.358 4.358 0 0 0-.31.457c-.207.343-.484.84-.773 1.375a168.719 168.719 0 0 0-1.606 3.074h-.002l-4.599.367c-1.775.14-2.495 2.339-1.143 3.488L6.17 15.14l-1.06 4.406c-.412 1.72 1.472 3.078 2.992 2.157l3.94-2.388c.592-.359.958-.996.958-1.692v-13.6Zm-2.002 0v.025-.025Z" fill="currentColor" aria-hidden="true"></path>
+</svg></div></div><div class="testimonial-card_quote" aria-hidden="true"><p class="display-3xl" aria-hidden="true">“From the moment we arrived everything was handled with genuine care — the cliff trail views alone made this the most memorable trip of our entire lives!"</p></div><div class="testimonial-card_client-details" aria-hidden="true"><div class="testimonial-client-avatars-wrapper" aria-hidden="true"><img loading="lazy" src="./Safeer - Webflow HTML Website Template_files/6a2faa2a2730ee1eee43a109_avatar3.avif" alt="Portrait of a woman with sleek pulled-back hair, natural makeup, and gold hoop earrings against white background." sizes="100vw" srcset="https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a2faa2a2730ee1eee43a109_avatar3-p-500.avif 500w, https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a2faa2a2730ee1eee43a109_avatar3-p-800.avif 800w, https://cdn.prod.website-files.com/6a0a055c4c51324e8155fcba/6a2faa2a2730ee1eee43a109_avatar3.avif 820w" class="testimonial-client-avatar" aria-hidden="true"></div><div class="testimonial-client-details" aria-hidden="true"><div class="testimonial-client-name" aria-hidden="true"><div class="display-xl" aria-hidden="true">Wren Ashford</div></div><div class="testimonial-client-designation" aria-hidden="true"><div class="text-size-regular text-color-secondary" aria-hidden="true">Solo Traveler</div></div></div></div></div></div><div aria-live="off" aria-atomic="true" class="w-slider-aria-label" data-wf-ignore=""></div></div><div class="testimonial-arrow-button is-left w-slider-arrow-left" role="button" tabindex="0" aria-controls="w-slider-mask-0" aria-label="previous slide"><div class="testimonial-arrow-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00701 14.6167C8.84315 14.4527 8.75111 14.2303 8.75111 13.9984C8.75111 13.7665 8.84315 13.5441 9.00701 13.3801L17.757 4.63005C17.9229 4.47549 18.1423 4.39135 18.369 4.39535C18.5956 4.39935 18.8119 4.49118 18.9722 4.6515C19.1326 4.81181 19.2244 5.0281 19.2284 5.25478C19.2324 5.48146 19.1482 5.70085 18.9937 5.86672L10.862 13.9984L18.9937 22.1301C19.1482 22.2959 19.2324 22.5153 19.2284 22.742C19.2244 22.9687 19.1325 23.185 18.9722 23.3453C18.8119 23.5056 18.5956 23.5974 18.369 23.6014C18.1423 23.6054 17.9229 23.5213 17.757 23.3667L9.00701 14.6167Z" fill="currentColor"></path>
+</svg></div></div><div class="testimonial-arrow-button w-slider-arrow-right" role="button" tabindex="0" aria-controls="w-slider-mask-0" aria-label="next slide"><div class="testimonial-arrow-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M18.993 13.3833C19.1569 13.5473 19.2489 13.7697 19.2489 14.0016C19.2489 14.2335 19.1569 14.4559 18.993 14.6199L10.243 23.3699C10.0771 23.5245 9.85773 23.6087 9.63105 23.6047C9.40436 23.6007 9.18808 23.5088 9.02777 23.3485C8.86745 23.1882 8.77562 22.9719 8.77162 22.7452C8.76762 22.5185 8.85176 22.2991 9.00632 22.1333L17.138 14.0016L9.00632 5.86994C8.85176 5.70407 8.76762 5.48469 8.77162 5.258C8.77562 5.03132 8.86745 4.81503 9.02777 4.65472C9.18808 4.4944 9.40436 4.40257 9.63105 4.39857C9.85773 4.39457 10.0771 4.47872 10.243 4.63328L18.993 13.3833Z" fill="currentColor"></path>
+</svg></div></div><div class="slide-nav w-slider-nav w-round w-num"><div class="w-slider-dot w-active" data-wf-ignore="" aria-label="Show slide 1 of 5" aria-pressed="true" role="button" tabindex="0" style="margin-left: 3px; margin-right: 3px;">1</div><div class="w-slider-dot" data-wf-ignore="" aria-label="Show slide 2 of 5" aria-pressed="false" role="button" tabindex="-1" style="margin-left: 3px; margin-right: 3px;">2</div><div class="w-slider-dot" data-wf-ignore="" aria-label="Show slide 3 of 5" aria-pressed="false" role="button" tabindex="-1" style="margin-left: 3px; margin-right: 3px;">3</div><div class="w-slider-dot" data-wf-ignore="" aria-label="Show slide 4 of 5" aria-pressed="false" role="button" tabindex="-1" style="margin-left: 3px; margin-right: 3px;">4</div><div class="w-slider-dot" data-wf-ignore="" aria-label="Show slide 5 of 5" aria-pressed="false" role="button" tabindex="-1" style="margin-left: 3px; margin-right: 3px;">5</div></div></div></div></div></div></div></div></div></section><section class="section_faq"><div class="padding-global"><div class="w-layout-blockcontainer container-large w-container"><div class="faq_wrapper"><div class="section-title_wrapper is-faq"><div class="section-subtitle" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="text-size-regular">(FAQ)</div></div><div class="section-title"><h2 class="display-6xl" aria-label="Everything You Need to Know, Answered Here"><div class="gsap_split_line gsap_split_line1" aria-hidden="true" style="position: relative; display: block; text-align: center; translate: none; rotate: none; scale: none; opacity: 0; transform: translate3d(0px, 25px, 0px);">Everything You Need to </div><div class="gsap_split_line gsap_split_line2" aria-hidden="true" style="position: relative; display: block; text-align: center; translate: none; rotate: none; scale: none; opacity: 0; transform: translate3d(0px, 25px, 0px);">Know, Answered Here</div></h2></div></div><div class="faq-content_wrapper"><div class="faq_left"><div data-animate="inview-slide-up" class="faq_featured-image-wrapper" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><img loading="lazy" src="./Safeer - Webflow HTML Website Template_files/6a0c1d7673082178567d59e9_Frame 2147259764.avif" alt="Sunlit desert mountain with dry grass and a small tree under a clear blue sky." class="faq_featured-image"><div class="faq_featured-card-wrapper"><div data-animate="inview-slide-up" class="faq_featured-card" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="faq_featured-icon-wrapper"><img loading="lazy" src="./Safeer - Webflow HTML Website Template_files/6a0f676d59755ef5794719bc_questionMark.svg" alt="Question Icon" class="faq_featured-image"></div><div class="faq_featured-title"><div class="display-2xl">Didn’t see your question?</div></div><div class="faq_featured-desc"><div class="text-size-regular text-color-secondary">Our team is here to help — just reach out and we’ll reply shortly.</div></div></div></div></div></div><div class="faq_right"><div data-animate="inview-slide-up" class="faq_accordion" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="faq_question-wrapper"><div class="faq_question"><div class="display-2xl">What should I bring for the tour?</div><div class="faq_accordion-buton-wrapper"><div class="faq_line1"></div><div class="faq_line3"></div></div></div></div><div class="faq_content-wrapper" style="height: 0px;"><div class="padding-top-16"></div><p class="text-size-regular text-color-neutral-secondary">We recommend light clothing, comfortable shoes, sunglasses, sun protection, and a reusable water bottle for the trip.</p></div></div><div data-animate="inview-slide-up" class="faq_accordion" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="faq_question-wrapper"><div class="faq_question"><div class="display-2xl">Is pickup and drop-off included?</div><div class="faq_accordion-buton-wrapper"><div class="faq_line1"></div><div class="faq_line3"></div></div></div></div><div class="faq_content-wrapper" style="height: 0px;"><div class="padding-top-16"></div><p class="text-size-regular text-color-neutral-secondary">Yes, pickup and drop-off are included in all tour packages, with scheduled times shared after your booking is confirmed.</p></div></div><div data-animate="inview-slide-up" class="faq_accordion" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="faq_question-wrapper"><div class="faq_question"><div class="display-2xl">Are the tours suitable for children?</div><div class="faq_accordion-buton-wrapper"><div class="faq_line1"></div><div class="faq_line3"></div></div></div></div><div class="faq_content-wrapper" style="height: 0px;"><div class="padding-top-16"></div><p class="text-size-regular text-color-neutral-secondary">Yes, most of our tours are family-friendly and suitable for children aged 5 and above with proper guidance throughout.</p></div></div><div data-animate="inview-slide-up" class="faq_accordion" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="faq_question-wrapper"><div class="faq_question"><div class="display-2xl">What happens in case of bad weather?</div><div class="faq_accordion-buton-wrapper"><div class="faq_line1"></div><div class="faq_line3"></div></div></div></div><div class="faq_content-wrapper" style="height: 0px;"><div class="padding-top-16"></div><p class="text-size-regular text-color-neutral-secondary">Tours are rescheduled or fully refunded during bad weather, and our team will notify you at least 24 hours in advance.</p></div></div><div data-animate="inview-slide-up" class="faq_accordion" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="faq_question-wrapper"><div class="faq_question"><div class="display-2xl">How can I book or cancel my tour?</div><div class="faq_accordion-buton-wrapper"><div class="faq_line1"></div><div class="faq_line3"></div></div></div></div><div class="faq_content-wrapper" style="height: 0px;"><div class="padding-top-16"></div><p class="text-size-regular text-color-neutral-secondary">You can book via our website or contact form, and cancellations are accepted up to 48 hours before the tour start time.</p></div></div><div data-animate="inview-slide-up" class="faq_accordion" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="faq_question-wrapper"><div class="faq_question"><div class="display-2xl">Are meals included in the tour package?</div><div class="faq_accordion-buton-wrapper"><div class="faq_line1"></div><div class="faq_line3"></div></div></div></div><div class="faq_content-wrapper" style="height: 0px;"><div class="padding-top-16"></div><p class="text-size-regular text-color-neutral-secondary">Meals are included in selected tour packages only — full details on inclusions are listed on each individual tour page.</p></div></div></div></div></div></div></div></section><section data-wf-component-id="ccf22541-c396-58e6-eec9-b71833233ef3" data-wf-variant-state="base" class="footer"><div class="padding-global"><div class="w-layout-blockcontainer container-large w-container"><div class="footer_wrapper"><div class="footer_top"><div class="footer_top-left"><div class="footer_heading"><h2 class="display-6xl text-color-white" aria-label="Discover Your Next Perfect Desert Escape"><div class="gsap_split_line gsap_split_line1" aria-hidden="true" style="position: relative; display: block; text-align: start; translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);">Discover Your Next </div><div class="gsap_split_line gsap_split_line2" aria-hidden="true" style="position: relative; display: block; text-align: start; translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);">Perfect Desert Escape</div></h2></div><div class="footer_images-block"><div class="footer_images"><img alt="" src="./Safeer - Webflow HTML Website Template_files/6a116390c871525c24556d93_footerImg.avif" class="footer_image _01" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px) rotate(-13.9998deg);"><img alt="" src="./Safeer - Webflow HTML Website Template_files/6a11638f1837367567b84c18_footerImg2.avif" class="footer_image _02" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px) rotate(18.0001deg);"></div></div><div data-animate="inview-slide-up" class="footer_email-block" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="footer_email-form-wrapper w-form"><form id="email-form" name="email-form" data-name="Email Form" method="get" class="footer_email-form" data-wf-page-id="6a0a055c4c51324e8155fc8c" data-wf-element-id="ccf22541-c396-58e6-eec9-b71833233f02" aria-label="Email Form"><input class="email-input-field w-input" maxlength="256" name="email" data-name="Email" aria-label="email-address" placeholder="Email Address" type="email" id="email" required=""><div class="footer_email-submit-button-wrapper"><input type="submit" data-wait="" aria-label="submit" class="submit-button w-button" value=""><a href="https://safeertemplate.webflow.io/#" class="text-button is-email-submit w-inline-block"><div class="text-button-content"><div class="text-button-icon"><div class="arrow-top-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div><div class="arrow-top-icon hover w-embed"><svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.375 14.625L14.625 3.375M14.625 11.8125V3.375H6.1875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div></div></div></a></div></form><div class="w-form-done" tabindex="-1" role="region" aria-label="Email Form success"><div>Thank you! Your submission has been received!</div></div><div class="w-form-fail" tabindex="-1" role="region" aria-label="Email Form failure"><div>Oops! Something went wrong while submitting the form.</div></div></div></div></div><div class="footer_top-right"><div class="footer-top-right-block"><div data-animate="inview-slide-up" class="footer_contact-item" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="footer_contact-label"><p class="text-size-regular text-color-white-secondary">Send mail to us</p></div><div class="footer_contact-value"><p class="text-size-regular text-color-white">4520 Colorado, Usa.</p></div></div><div data-animate="inview-slide-up" class="footer_contact-item" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="footer_contact-label"><p class="text-size-regular text-color-white-secondary">Email:</p></div><div class="footer_contact-value"><p class="text-size-regular text-color-white">info@safeer.com</p></div></div></div><div class="footer-top-right-block"><div data-animate="inview-slide-up" class="footer_contact-item" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="footer_contact-label"><p class="text-size-regular text-color-white-secondary">Call Us:</p></div><div class="footer_contact-value"><p class="text-size-regular text-color-white">+(222) 505-5228</p></div></div><div data-animate="inview-slide-up" class="footer_contact-item" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="footer_contact-label"><p class="text-size-regular text-color-white-secondary">Open Time:</p></div><div class="footer_contact-value"><p class="text-size-regular text-color-white">09.00am - 06.00pm</p></div></div></div></div></div><div class="footer_divider"></div><div class="footer_bottom"><div data-animate="inview-slide-up" class="footer_copyright" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><p class="text-size-regular text-color-white">©2026 Weabers. <br data-wf-component-id="ccf22541-c396-58e6-eec9-b71833233ef3" data-wf-variant-state="base">Powered By <a href="https://webflow.com/" class="link">Webflow</a></p></div><div class="footer_nav-group"><div data-animate="slideup-item" class="footer_nav-single-group" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="footer_nav-label"><p class="text-size-regular text-color-white-secondary">Main Pages</p></div><div class="footer_nav-links"><div class="footer_nav-link-wrapper"><a href="https://safeertemplate.webflow.io/" aria-current="page" class="footer_nav-link w-inline-block w--current"><div>Home</div></a><a href="https://safeertemplate.webflow.io/about" class="footer_nav-link w-inline-block"><div>About Us</div></a><a href="https://safeertemplate.webflow.io/tour" class="footer_nav-link w-inline-block"><div>Tour</div></a><a href="https://safeertemplate.webflow.io/gallery" class="footer_nav-link w-inline-block"><div>Gallery</div></a><a href="https://safeertemplate.webflow.io/blog" class="footer_nav-link w-inline-block"><div>Blog</div></a></div></div></div><div data-animate="slideup-item" class="footer_nav-single-group" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="footer_nav-label"><p class="text-size-regular text-color-white-secondary">Utility Pages</p></div><div class="footer_nav-links"><div class="footer_nav-link-wrapper"><a href="https://safeertemplate.webflow.io/utility-pages/license" class="footer_nav-link w-inline-block"><div>Licenses</div></a><a href="https://safeertemplate.webflow.io/utility-pages/changelog" class="footer_nav-link w-inline-block"><div>Changelog</div></a><a href="https://safeertemplate.webflow.io/utility-pages/style-guide" class="footer_nav-link w-inline-block"><div>Style Guide</div></a><a href="https://safeertemplate.webflow.io/privacy-policy" class="footer_nav-link w-inline-block"><div>Privacy</div></a><a href="https://safeertemplate.webflow.io/404" class="footer_nav-link w-inline-block"><div>404</div></a></div></div></div><div data-animate="slideup-item" class="footer_nav-single-group" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="footer_nav-label"><p class="text-size-regular text-color-white-secondary">Social Links</p></div><div class="footer_nav-links"><div class="footer_nav-link-wrapper"><a href="https://facebook.com/" class="footer_nav-link w-inline-block"><div>Facebook</div></a><a href="https://www.instagram.com/" class="footer_nav-link w-inline-block"><div>Instagram</div></a><a href="https://x.com/" class="footer_nav-link w-inline-block"><div>X.com</div></a><a href="http://linkedin.com/" class="footer_nav-link w-inline-block"><div>LinkedIn</div></a></div></div></div></div></div><div data-animate="inview-slide-up" class="footer-copyright-mobile" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="footer_copyright is-mobile"><p class="text-size-regular text-color-white-secondary">©2026 Weabers. Powered By Webflow</p></div></div></div></div></div><div class="footer_logo-text"><div class="footer_logo-image-wrapper"><img loading="lazy" src="./Safeer - Webflow HTML Website Template_files/6a2e9e35cdf959c033106540_Frame 2147259728.svg" alt="Safeer Text Logo" class="footer_logo-image" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0%, 0px);"></div></div></section></div></div><script src="./Safeer - Webflow HTML Website Template_files/jquery-3.5.1.min.dc5e7f18c8.js.download" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="./Safeer - Webflow HTML Website Template_files/webflow.schunk.b2ce80b319b50268.js.download" type="text/javascript" integrity="sha384-d6zuFTIAr8MQ/7fCs8/4opeMx1UwafC8TAjwguDIM4B9cQ77KdvvqQNF57n5C0qN" crossorigin="anonymous"></script><script src="./Safeer - Webflow HTML Website Template_files/webflow.5d9ffb4a.cfe3df4920690ae8.js.download" type="text/javascript" integrity="sha384-TgeJ7i28P4adXEXk8bd/r00ALGU9s8/29J8TEcoI7fvnu78WRjnh4gGbGPp/CtXG" crossorigin="anonymous"></script><script src="./Safeer - Webflow HTML Website Template_files/gsap.min.js.download" type="text/javascript"></script><script src="./Safeer - Webflow HTML Website Template_files/SplitText.min.js.download" type="text/javascript"></script><script src="./Safeer - Webflow HTML Website Template_files/ScrollTrigger.min.js.download" type="text/javascript"></script><script src="./Safeer - Webflow HTML Website Template_files/CustomEase.min.js.download" type="text/javascript"></script><a class="w-webflow-badge" href="https://webflow.com/?utm_campaign=brandjs"><img src="./Safeer - Webflow HTML Website Template_files/webflow-badge-icon-d2.89e12c322e.svg" alt="" style="margin-right: 4px; width: 26px;"><img src="./Safeer - Webflow HTML Website Template_files/webflow-badge-text-d2.c82cec3b78.svg" alt="Made in Webflow"></a><root id="rc-crm-extension-quick-access-button"><div><div style="bottom: 100px; right: 0px; position: fixed; z-index: 99999;"><div class="react-draggable" style="display: flex; flex-direction: row; align-items: center; transform: translate(0px, 0px);"><button class="MuiButtonBase-root sc-iCfMLu sc-furwcr vfXGH RcIconButton-root RcIconButton-contained" tabindex="0" type="button" style="padding: 0px; background: rgb(255, 255, 255);"><span class="sc-eCImPb bhNaXq icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="sc-hKwDye dqDCDr"><g clip-path="url(#clip0_82_87)"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.2314 0.875C14.5859 0.875 16.0508 2.04175 16.6261 4.37525H20.1404C21.889 4.37525 23.6342 6.11715 23.6342 7.89277V11.3734C25.9614 11.9862 27.125 13.456 27.125 15.7829C27.125 18.1098 25.9614 19.569 23.6342 20.1603V23.6286C23.6342 25.4019 21.8713 27.125 20.1062 27.125C18.9295 27.125 13.6871 27.125 4.37917 27.125C2.62572 27.125 0.875 25.3878 0.875 23.6286V7.89277C0.875 6.12755 2.63285 4.37525 4.37917 4.37525H7.98335C8.46088 2.04175 9.8769 0.875 12.2314 0.875Z" fill="#FF7A00"></path><path d="M8.29215 22.7458C8.3399 22.7481 8.38758 22.7397 8.43229 22.7231C8.47701 22.7064 8.51789 22.6799 8.55203 22.6465C8.58536 22.6125 8.61183 22.5716 8.62927 22.5269C8.64671 22.4822 8.65506 22.4344 8.65277 22.3868V12.2696C8.64671 12.2264 8.65049 12.1817 8.66416 12.14C8.67776 12.0984 8.70126 12.0605 8.73231 12.0295C8.76335 11.9984 8.80127 11.9749 8.84214 11.9613C8.88309 11.9477 8.9278 11.9431 8.97097 11.9491H15.5311C15.5743 11.9446 15.6174 11.9499 15.6576 11.9643C15.6978 11.9787 15.7349 12.0022 15.7644 12.0332C15.7947 12.0643 15.8167 12.1014 15.8303 12.1423C15.844 12.1832 15.8477 12.2264 15.8417 12.2696V15.4278C15.8477 15.4703 15.844 15.5142 15.8311 15.5551C15.8182 15.596 15.7955 15.6339 15.7652 15.6649C15.7349 15.696 15.6985 15.7195 15.6576 15.7339C15.6167 15.7483 15.5735 15.7536 15.5303 15.7483H12.5749C12.531 15.7415 12.4863 15.7445 12.4438 15.7581C12.4014 15.7718 12.3627 15.7952 12.331 15.8263C12.2991 15.8574 12.2756 15.896 12.2613 15.9376C12.2469 15.9793 12.2431 16.0248 12.2499 16.0688V17.4687C12.2438 17.7876 12.2741 18.1058 12.3401 18.4172C12.4082 18.699 12.5271 18.9671 12.69 19.2073L14.7288 22.4064C14.7992 22.5208 14.9 22.6125 15.0204 22.6731C15.1409 22.7337 15.275 22.7587 15.4083 22.7474H18.0683C18.2024 22.7474 18.2888 22.7117 18.3296 22.6367C18.3478 22.5928 18.3539 22.5443 18.3471 22.4966C18.3403 22.4488 18.3198 22.4049 18.2895 22.3678L16.2675 19.102C16.1743 18.9679 16.2084 18.8626 16.3682 18.7815L17.7865 18.1422C18.2433 17.9581 18.6312 17.6361 18.8971 17.2217C19.1433 16.7854 19.2646 16.29 19.2486 15.7892V11.1499C19.2486 10.3629 19.0456 9.76664 18.6387 9.35983C18.2319 8.95302 17.6357 8.75 16.8485 8.75H7.65045C6.87998 8.75 6.28753 8.95302 5.87236 9.35983C5.4572 9.76664 5.25037 10.3629 5.25037 11.1499V22.3875C5.2481 22.4352 5.25643 22.4829 5.2731 22.5276C5.28976 22.5723 5.31628 22.6132 5.34962 22.6474C5.38371 22.6807 5.42462 22.7064 5.46932 22.7239C5.51401 22.7413 5.56175 22.7488 5.60947 22.7465H8.28912L8.29215 22.7458Z" fill="white"></path></g><defs><clippath id="clip0_82_87"><rect width="28" height="28" fill="white"></rect></clippath></defs></svg></span><span class="MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root sc-iCfMLu sc-furwcr lnudDN RcIconButton-root RcIconButton-round" tabindex="0" type="button" style="position: absolute; top: -4px; right: 20px; background: rgb(255, 122, 0); border-radius: 50%; height: 16px; width: 16px; color: white; border: 2px solid white;"><span class="sc-eCImPb bhNaXq arrow_up icon"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="sc-hKwDye dqDCDr"><path d="M9.636 18.95a.999.999 0 0 0 1.414 0L16 14l4.95 4.95a.999.999 0 1 0 1.414-1.414l-5.657-5.657a.999.999 0 0 0-1.414 0l-5.657 5.657a.999.999 0 0 0 0 1.414z"></path></svg></span><span class="MuiTouchRipple-root"></span></button><div style="cursor: grab; display: inherit;"><button class="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text sc-kfPuZi iwLYty rc-huddle-menu-handle" tabindex="0" type="button" style="padding: 0px;"><span class="MuiButton-label"><img src="data:image/png;base64,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L25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgeG1wTU06RG9jdW1lbnRJRD0iZ2ltcDpkb2NpZDpnaW1wOjdhMjM1YWVhLTM4MDEtNGNiNi05ZmUwLThjZTU5M2UxY2NkNiIKICAgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1Y2Q4Yzc5NS1kMDk1LTQ1OTAtYTdiMi0xYTU2YWZmYjkxNjkiCiAgIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo4YWI4NmZiZS0wNGJiLTRjZWItYjJhYS1jMThkYjBmYmNjOTUiCiAgIGRjOkZvcm1hdD0iaW1hZ2UvcG5nIgogICBHSU1QOkFQST0iMi4wIgogICBHSU1QOlBsYXRmb3JtPSJXaW5kb3dzIgogICBHSU1QOlRpbWVTdGFtcD0iMTcwNTAyNzkyMzk4Mjg2OCIKICAgR0lNUDpWZXJzaW9uPSIyLjEwLjI0IgogICB0aWZmOk9yaWVudGF0aW9uPSIxIgogICB4bXA6Q3JlYXRvclRvb2w9IkdJTVAgMi4xMCI+CiAgIDx4bXBNTTpIaXN0b3J5PgogICAgPHJkZjpTZXE+CiAgICAgPHJkZjpsaQogICAgICBzdEV2dDphY3Rpb249InNhdmVkIgogICAgICBzdEV2dDpjaGFuZ2VkPSIvIgogICAgICBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjc4MWFiMWNhLWE1NmEtNDYzNS1hZTQ1LTA5YmRjNTM4YWNmMyIKICAgICAgc3RFdnQ6c29mdHdhcmVBZ2VudD0iR2ltcCAyLjEwIChXaW5kb3dzKSIKICAgICAgc3RFdnQ6d2hlbj0iMjAyMy0wNS0wOVQxMDoyMzoyMCIvPgogICAgIDxyZGY6bGkKICAgICAgc3RFdnQ6YWN0aW9uPSJzYXZlZCIKICAgICAgc3RFdnQ6Y2hhbmdlZD0iLyIKICAgICAgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo2NmY1ZmFkZC0wNzQ1LTQ4YzktYWQ0YS05NWE5YTcwNTdiOTAiCiAgICAgIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkdpbXAgMi4xMCAoV2luZG93cykiCiAgICAgIHN0RXZ0OndoZW49IjIwMjMtMDUtMDlUMTA6MzM6NTkiLz4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii8iCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NTMzNDlmYWItZjViMy00Mjk1LWFkZmUtZTk1MDFhZmUxY2U2IgogICAgICBzdEV2dDpzb2Z0d2FyZUFnZW50PSJHaW1wIDIuMTAgKFdpbmRvd3MpIgogICAgICBzdEV2dDp3aGVuPSIyMDI0LTAxLTEyVDEwOjUyOjAzIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwveG1wTU06SGlzdG9yeT4KICA8L3JkZjpEZXNjcmlwdGlvbj4KIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAKPD94cGFja2V0IGVuZD0idyI/Pmu5WP0AAAAGYktHRADHAMcAxzOWWGIAAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfoAQwCNANg0tNkAAAAGXRFWHRDb21tZW50AENyZWF0ZWQgd2l0aCBHSU1QV4EOFwAAAERJREFUWMPt1DEOABAQRcHl2A7g2tRbERUx0wr5UbwI4G3l9OJoMdJDPb+1Ot9Vb/9BA0EHddBA0EEdNBB0UAcNBP41AWV6GB3jqSqkAAAAAElFTkSuQmCC" style="pointer-events: none; width: 20px; height: 20px;"></span></button></div></div></div><div></div></div></root><rc-c2d-widget id="src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk" style="--c2d-arrow-color: #ff8800;" class="src-widgets-BuiltinWidget-_styles_c2dWidget_uE0yk">
+      <div class="src-widgets-BuiltinWidget-_styles_c2dWrapper_v8pYg">
+        <img class="src-widgets-BuiltinWidget-_styles_c2dLogo_gBsgM" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAJbnpUWHRSYXcgcHJvZmlsZSB0eXBlIGV4aWYAAHja1ZhZkuW4DUX/uQovgfOwHE6I8A68fB9QesqxurPK/umnSlGiSBDEvRhYZv/n32L+xS+4ZE1MpeaWs+UXW2y+81Dt9Rvn7mw89/Pz9yfeP/Sb54OnK9CG67W9Pmz6eXb3e7sXca/xL0GvB9d5Sm8fer/7x8f+cQv09bOgW4PgrpXtuifcgoK/NYrX+7w1yq2WD1tb81453l317S+G4nPKrkTu0dtScuO5ehsL9lyqqEzfjqB0GfTpeL2/hnp08ju4YLn7EC8tg/7F0GkddxcSxqYJvPiQz71c0AAlKqBpuxfq9jHme9u82egXv59s66bJocGD2iP7Ez+ep0/0KP3uD1f/m6D8tB9gffVD3o/94VnGf9Covq3s32s0i+0f9vwOVZFVRfYZbGKPmT3ne1OvrZwnBg611pmWuQp/iedyrsZVWWZCnWXsxKMGL815MBYX3XLdidunnW6iYvTbF1rvpw+nr4JF8/PAH/UyTnwJLaxQgX7ClUC3f3RxZ912lpuuwvvlGOkdwhwznsu8f/lfri+CRNRnnLP1sRV6efVC1FDk9M4oAHFy2xREzTGxewz9/qfABhBMx8yVDXY7LhEjuTduBcVZvT9xRXt5tyvrFoCJWDuhjAsgYDMO5bKzxfviHHas4NPRHKfzw5npXEp+oaWPIWTAwQtYmznFnbE++aub6AkQCZ8sQNNCB6wYE/QpsRo41FNIMaWUU0k1tdRzyOphOZesYbiXUGJJJZdSamml11BjTTXXUmtttTffgiFMp4Y/ttpa651FO5I7szsjeh9+hBFHGnmUUUcbfUKfGWeaeZZZZ5t9+RXMwpFXXmXV1VbfbkOlHXfaeZddd9tdoJoEiZIkS5EqTfqD2o3qR9Q+I/fXqLkbNX+ACoZbeVCju5SXCKfhJClmIOajA/GiCEBor5jZ6mL0itzAawx5B69IHi2TgrOcIgaCcTufxD3YvSH3LW4m1j/CzX9Gzih0/w/kjEL3CbmvuH2D2tJwNw9ixwvNMaoNuB8Ddu2+dk2jv92aP534DxC09x4r+wECwC17+rUxtOwiJ2xJLna1KCAmQ4CtFZku7Dy7Hxsq+dGCrEzMll4UCzkg9CID04NV2e6IitIGK0qPQKFTPs6wrE266aY0qbqGy0dNaT3sWn+1h9ESXIAoXrkHOdI4AnszcHaMuebKe+TVZbOLtnMOw2/pq3hh5yNJT3CoNQk5uSSxLZc26vcZVFDcRhuUPUlP8HJZYQpft30/Kb6b8sxwJNqz/QhfDfurvkzsmXCkNH0qYxGEBY/YLQ8C1CrdbcJXBwYXE//gfKjpPFNRnda8Hp7WCX7mNYwnDIY7EMKjvjLkefg0h9Z86vCfp7Q4Pq0TEmustUj+mM4ti2GBHyt2PNilb/SnwjlP9kt7YNPHsokRwHxp9GVkGC8NUr2h9/P+5ihcTkd9BukY84kvY+cB+dLzQDoQIVQpfeDmmqI47bSEp3iJBJVo+HYvYD+3ge/XQOxCQLqmDeBMnhWWl96Cb8TUvpLpinFBaIenFqilDLG6qrJCUpkYjoBW5MU2QuUSCLaCEOq3lE0aL0YIse+GBaXTYuOCDmcQtIPVi60UWOqmVcwQFBkm0F6nIcS8pFj7QzmJLLBribNHsXzZ1EE9NfNen0bkLvCYZGKLmhn0Qt542RgSwxqTpITgJWyvTrkMSDVIDjOPgaHxVvO/Hsg7Q4hMZQ7U26WEg1djWYLJjTOw8in+MkIq/tfAiSFYz4+yB3fSFPb3i8x5LdCC80KoENMHpbjmI8m1CrlOSbZ6X5whqIXdaJmA1iEePk7oIDQggWyqXID7RNCdcRXje0U7QoYtI/h9pJSUXEMiNFTPx6uQUHKAC0FCWHUSoOYJcZr/ju6G+IiB8xvZH26zsSh+z1mIYBMXBKAP0Q/RVAxCuAEOA9vQdDCGtVTGxXlcoc7foPwm92su3zQrzxH2uoxYBdpZiU5zv97GnhSaWtJYLcfGQOEgfduJqQnIZuIGhGeNB/jm7jkTiM6tTDURWWVIbRLXnmPO5dEjkCgCsg5P4Rc+3QzlDohivRI1XFWKjDLizitQPoFiL3loWeLhQSLez4RFfaDSiFAch8ETtDHFcvw4oLIhvwjVNxj9IlLNSvZ3gedmGqy9BixfZe5pfpXBvuEkbKTUuUg5/HzWDGgZTVg2U1JVvckIsVA/kSDHFFK5vVr0zbIaaQ3fSY3EDeC9zYUl/bFmcEY4AEeCEWOwxpq9kOgDXi13dsNccc7QtCaQHe6KIAyCu87CfHvPkDn3b5bbonVDYlTcsY9WC77+xI4+qFOpB5Ujgs4rtqZ8DxqYlPac5AzmPbSPE7+8SUS1edESRwHRK+j7d3x88ZYUyOShH8xPmft3xDXfMVcpqxnitEHcOC5eiFRQoR/eFq2nNa9hZ8xcumGvFNmz0RSg4NCqLgqm7rj6Xe1QUVUNX3X3niKwwE8oOQgKJQ3mF7MKFXrFlmsOrZ/Qs4c5huV9sjy4x/qqnXCH/dUOx2Lmo8n+3GLm7339ZxY7uR+u24nvNQ4ABPm0T8ahN8OE7QOcxo8XZJaAo2e31Q6idoCVHHTIsWY10sDcpXPIYGH8JOBLLgRLmkIMpRoVE7Mnm2mXb7R1I0bBFu/awnxTssxV7pKlRSTlH9U25hQ3Cd+jKtUKCtUaSN17JyEO6qaqFEmxswWMR9ihiHDu8uiB0S1bU88mBB7zLU5mUm/XptpYF+NwE4IeFUcLWkCEiqGpybTmYRavgdBrFvluEEQo+Qf9dcGxgQozbV+0Gt8LRUCbTE26w0mTDxTT3pOUmt+l4acpLUOsDGRHS9IgDvMNpi4NWj3hvZTaV3BMM+b5GClpIakmej2INYAIhS+LzH2dQMhmehZ5yYCwfKpfK9m3KpjyOL1VwSl1jp1UoZAGOyPAJ0wPAqErkaExe2X5J8KRedgtdCD4Zz0UM4boVRfmKSf7dDxUfEl3jVjxvOc4cqUdOfVWHG7MUxkZuGdZdOvW9P8XO8SpVEAytB4begji0BSulRl0dkhWyYRacD3FdYw5mNnvqtqmNysoJ9U0r4cxA6I5Ih9m4ODt1EoEiXMQ1mn6H+NYX0L/eW3+7cBvXOTH7YX9fRIyq3KWqjg6Cbpr4XLqcig3OG+uccjMMf9FhY05w3dMMOn7w85vt/8wQVTfpHxrzX8B+EFUk3J3fBsAAAGFaUNDUElDQyBwcm9maWxlAAB4nH2RPUjDUBSFT1OLIpUOdlARyVCdLIiKOEoVi2ChtBVadTB56R80aUhSXBwF14KDP4tVBxdnXR1cBUHwB8TZwUnRRUq8Lym0iPHC432cd8/hvfsAoVFhqtk1AaiaZaTiMTGbWxW7X+FDCAEMYkRipp5IL2bgWV/31E11F+VZ3n1/Vp+SNxngE4nnmG5YxBvEM5uWznmfOMxKkkJ8Tjxu0AWJH7kuu/zGueiwwDPDRiY1TxwmFosdLHcwKxkq8TRxRFE1yheyLiuctzirlRpr3ZO/MJjXVtJcpzWMOJaQQBIiZNRQRgUWorRrpJhI0XnMwz/k+JPkkslVBiPHAqpQITl+8D/4PVuzMDXpJgVjQODFtj9Gge5doFm37e9j226eAP5n4Epr+6sNYPaT9HpbixwBoW3g4rqtyXvA5Q4w8KRLhuRIflpCoQC8n9E35YD+W6B3zZ1b6xynD0CGZrV8AxwcAmNFyl73eHdP59z+7WnN7wdSEHKarN+qWAAADRhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDQuNC4wLUV4aXYyIj4KIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CiAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgIHhtbG5zOkdJTVA9Imh0dHA6Ly93d3cuZ2ltcC5vcmcveG1wLyIKICAgIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIgogICAgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIgogICB4bXBNTTpEb2N1bWVudElEPSJnaW1wOmRvY2lkOmdpbXA6ZDM5M2JiNWYtZGMxZS00NzhhLWIwNDgtNjdlNDgzMzhmOWQ4IgogICB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjIzNDMyZWFiLWRmNTUtNDk5MC1iYTJjLTJhZGE3NjA5YjVhOCIKICAgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOmY1NTBiN2UyLWM0ZWYtNDMxOC04NGIwLWQxZmQzYmI2ZTI5ZSIKICAgZGM6Rm9ybWF0PSJpbWFnZS9wbmciCiAgIEdJTVA6QVBJPSIyLjAiCiAgIEdJTVA6UGxhdGZvcm09IldpbmRvd3MiCiAgIEdJTVA6VGltZVN0YW1wPSIxNzA1Mjk2Mzg4OTQ1MjI0IgogICBHSU1QOlZlcnNpb249IjIuMTAuMjQiCiAgIHRpZmY6T3JpZW50YXRpb249IjEiCiAgIHhtcDpDcmVhdG9yVG9vbD0iR0lNUCAyLjEwIj4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii8iCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6MDFjYzE0YzMtNmNmMC00MjEwLWEyM2QtOWE2MThiYjdjOTQ0IgogICAgICBzdEV2dDpzb2Z0d2FyZUFnZW50PSJHaW1wIDIuMTAgKFdpbmRvd3MpIgogICAgICBzdEV2dDp3aGVuPSIyMDI0LTAxLTE1VDEzOjI2OjI4Ii8+CiAgICA8L3JkZjpTZXE+CiAgIDwveG1wTU06SGlzdG9yeT4KICA8L3JkZjpEZXNjcmlwdGlvbj4KIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAKPD94cGFja2V0IGVuZD0idyI/PiqGG40AAAAGYktHRADHAMcAxzOWWGIAAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfoAQ8FGhzxJ27WAAAAGXRFWHRDb21tZW50AENyZWF0ZWQgd2l0aCBHSU1QV4EOFwAAAsRJREFUWMPt109oXFUUBvDfnTeZmkmrKCq1tJIKtaAWTMRCF2LbRcGdGze60pUrwY2WWRWEgYqC0IULqQqiICgIImqhVEQX0lpDhFgRSTehrVGcpDV/JjPzXLxJOpn3ZjIzjSvzweNxz7vv3u9859xz3mML/3eEfibHJffiebyAvbiM93E6lF37TwnEJUW8hpeQb3lUw9sohbIbt0wgLgliQxhGbm1e8DA+wu6Mda7gWbFJxE1bQ7CAWiiv2XoicAQn8UgLgdW5hS7OVFs2TwgwgVfwfScS+QzbSTw+QDizyB3C63gSK70SGE+bojYxOqGBervxURQx1yuBaN1o+2HuO8i2kQ1yNqa6yNWLzJ9tJZLrxj7f1aGRJ3jqBPsfI8pvLEC9zvTPfI75Mz3FrcuqOe4ZY98Yw9t7z4S9B9g53q5CGIBAoDBy0/NGnet/s1LNWGWI2+8iFxFFFFZPcH1184fikguhbKm/ELRieZEz7zL9LaHFoThm90GefpnijiyHC/gQ78Ulb4WyymAE4piFCpUv1q8f484HiBvd3r4fr+IvnGoL9KDIE+4gVyREvVT12/Di4CFox4ETPHgoCUdxB4VtLap0VGPf5hCIMTrG+JG050v/MH+12aNSuLR5CtRrSV6sJuRKlbk/ufAVV75sawtgsdk1N4nAzBRLR2/WiEvnOXuK2Y+zZk/jdLObuvUkDPjlAy5PJSrAzlGqlU5d8jm8EcrpfjD4KahO8fWbVGaT8d27OHacaE9WxvwaypY71Ntuca4mBWhpIbnXltfn3OxnfPcJN+aS53v2M/pMp7TttxTXmfmGTxEVks1nzqXV/ekdrv3G0HBSrv+Y7LeapLCCoeRI/cjvE+tJpUr0BNOTLcexkfWR0OjS8lI4l1Ji7droQ6SepfZFLPSjwPGmO4fXlBiwUuCHZg+obf0BbaET/gUF7c6e6npB6QAAAABJRU5ErkJggg==" style="">
+        <div class="src-widgets-BuiltinWidget-_styles_callBtn_ZQO39 src-widgets-BuiltinWidget-_styles_visible_mEW3O" style="" title="Call with RingCentral">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 26">
+    <path fill="#0083BF" fill-rule="evenodd" stroke="#066FAC" stroke-width=".9" d="M6.656 17.651C.942 10.547.28 4.627 2.545 2.607c.592-.522 2.16-1.323 2.892-1.427.801-.14 1.602.243 2.02 1.01.802 1.636 1.777 3.238 2.788 4.805.452.697.348 1.567-.244 2.16-.349.348-.767.557-1.15.765a3.18 3.18 0 0 0-.801.523s-.105.104-.105.313c-.035.453.035 1.707 2.02 4.214 2.16 2.647 3.45 2.82 3.798 2.82.14 0 .244-.034.244-.034.244-.21.453-.453.662-.697.314-.348.593-.696 1.01-.975.697-.452 1.638-.348 2.16.21 1.325 1.323 2.753 2.576 4.112 3.76.662.557.906 1.428.557 2.16-.244.66-1.359 2.02-2.02 2.541-.558.488-1.324.697-2.195.697-3.345 0-7.7-2.925-11.637-7.8z"></path>
+</svg>
+
+        </div>
+        <div class="src-widgets-BuiltinWidget-_styles_separatorLine_RYpwW src-widgets-BuiltinWidget-_styles_visible_mEW3O" style=""></div>
+        <div class="src-widgets-BuiltinWidget-_styles_textBtn_BlZA5 src-widgets-BuiltinWidget-_styles_visible_mEW3O" style="" title="SMS with RingCentral">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 22 21">
+    <path fill="#066FAC" fill-rule="nonzero" d="M10.944.014C4.91.014.007 4.068.007 9.316c0 2.86 1.54 5.626 4.085 7.417-.094.534-.377 1.257-1.162 2.64l-.692 1.131h1.383a6.976 6.976 0 0 0 4.84-1.917c.817.157 1.634.252 2.483.252 6.034 0 10.936-4.275 10.936-9.523 0-5.28-4.902-9.302-10.936-9.302z"></path>
+</svg>
+
+        </div>
+      </div>
+      <div class="src-widgets-BuiltinWidget-_styles_arrow_pWfWX" style="">
+        <div class="src-widgets-BuiltinWidget-_styles_innerArrow_L1vrh"></div>
+      </div>
+    </rc-c2d-widget></body></html>

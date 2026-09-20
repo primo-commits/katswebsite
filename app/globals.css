@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+  --font-display: "Sora";
+  --font-body: "IBM Plex Sans";
+  --font-mono: "IBM Plex Mono";
+
+  /* Graphite — default */
+  --ground: #0e1012;
+  --panel: #16191c;
+  --panel-2: #1d2126;
+  --line: #282e34;
+  --text: #eceff1;
+  --muted: #98a2aa;
+  --accent: #22d3ee;
+  --on-accent: #06212a;
+}
+
+[data-palette="beton"] {
+  --ground: #e7e9ea;
+  --panel: #ffffff;
+  --panel-2: #dde1e3;
+  --line: #c9cfd2;
+  --text: #14181a;
+  --muted: #565e63;
+  --accent: #0f5e5a;
+  --on-accent: #ffffff;
+}
+
+[data-palette="mono"] {
+  --ground: #fbfbfc;
+  --panel: #ffffff;
+  --panel-2: #f1f3f5;
+  --line: #e1e5e9;
+  --text: #0f1317;
+  --muted: #585f66;
+  --accent: #1f5eff;
+  --on-accent: #ffffff;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--ground);
+  color: var(--text);
+  font-family: var(--font-body), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+ * Reveal targets are VISIBLE by default. GSAP animates from a start state it
+ * sets at runtime, so text still renders if JS fails or is slow — unlike the
+ * Safeer source, which bakes opacity:0 into the markup.
+ */
+[data-animate] { opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
